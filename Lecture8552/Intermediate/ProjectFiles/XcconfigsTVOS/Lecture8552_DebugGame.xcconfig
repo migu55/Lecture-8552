@@ -1,0 +1,8 @@
+// pull in the shared settings for all configs for this target
+#include "Lecture8552.xcconfig"
+
+// Unreal per-config variables
+UE_TARGET_CONFIG = DebugGame
+UE_UBT_BINARY_SUBPATH = Lecture8552-TVOS-DebugGame
+UE_TVOS_EXECUTABLE_NAME = Lecture8552-TVOS-DebugGame
+PRODUCT_NAME = Lecture8552-TVOS-DebugGame

@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"/Users/mmarasigan2/Documents/Unreal Projects/Lecture8552/Source/Lecture8552/Lecture8552.Build.cs",
+		"/Users/mmarasigan2/Documents/Unreal Projects/Lecture8552/Source/Lecture8552.Target.cs",
+		"/Users/mmarasigan2/Documents/Unreal Projects/Lecture8552/Source/Lecture8552Editor.Target.cs"
+	],
+	"EngineVersion": "5.8.0"
+}

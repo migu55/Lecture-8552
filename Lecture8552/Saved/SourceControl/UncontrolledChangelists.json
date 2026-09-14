@@ -1,0 +1,15 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"/Users/mmarasigan2/Documents/Unreal Projects/Lecture8552/Content/Lvl_Main.umap",
+				"/Users/mmarasigan2/Documents/Unreal Projects/Lecture8552/Content/_Main/Lvl_Main.umap",
+				"/Users/mmarasigan2/Documents/Unreal Projects/Lecture8552/Content/_Main/Blueprints/BP_Lecture8552GameMode.uasset",
+				"/Users/mmarasigan2/Documents/Unreal Projects/Lecture8552/Content/_Main/Blueprints/BP_Lecture8552Character.uasset"
+			]
+		}
+	]
+}

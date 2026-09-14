@@ -1,0 +1,104 @@
+{
+	"ConfigurationsAndPlatforms": [
+		{
+			"Configuration": "DebugGame",
+			"Platform": "IOS",
+			"Target": "Editor"
+		},
+		{
+			"Configuration": "DebugGame",
+			"Platform": "Mac",
+			"Target": "Editor"
+		},
+		{
+			"Configuration": "DebugGame",
+			"Platform": "TVOS",
+			"Target": "Editor"
+		},
+		{
+			"Configuration": "DebugGame",
+			"Platform": "VisionOS",
+			"Target": "Editor"
+		},
+		{
+			"Configuration": "DebugGame",
+			"Platform": "IOS",
+			"Target": "Game"
+		},
+		{
+			"Configuration": "DebugGame",
+			"Platform": "Mac",
+			"Target": "Game"
+		},
+		{
+			"Configuration": "DebugGame",
+			"Platform": "TVOS",
+			"Target": "Game"
+		},
+		{
+			"Configuration": "DebugGame",
+			"Platform": "VisionOS",
+			"Target": "Game"
+		},
+		{
+			"Configuration": "Development",
+			"Platform": "IOS",
+			"Target": "Editor"
+		},
+		{
+			"Configuration": "Development",
+			"Platform": "Mac",
+			"Target": "Editor"
+		},
+		{
+			"Configuration": "Development",
+			"Platform": "TVOS",
+			"Target": "Editor"
+		},
+		{
+			"Configuration": "Development",
+			"Platform": "VisionOS",
+			"Target": "Editor"
+		},
+		{
+			"Configuration": "Development",
+			"Platform": "IOS",
+			"Target": "Game"
+		},
+		{
+			"Configuration": "Development",
+			"Platform": "Mac",
+			"Target": "Game"
+		},
+		{
+			"Configuration": "Development",
+			"Platform": "TVOS",
+			"Target": "Game"
+		},
+		{
+			"Configuration": "Development",
+			"Platform": "VisionOS",
+			"Target": "Game"
+		},
+		{
+			"Configuration": "Shipping",
+			"Platform": "IOS",
+			"Target": "Game"
+		},
+		{
+			"Configuration": "Shipping",
+			"Platform": "Mac",
+			"Target": "Game"
+		},
+		{
+			"Configuration": "Shipping",
+			"Platform": "TVOS",
+			"Target": "Game"
+		},
+		{
+			"Configuration": "Shipping",
+			"Platform": "VisionOS",
+			"Target": "Game"
+		}
+	]
+}

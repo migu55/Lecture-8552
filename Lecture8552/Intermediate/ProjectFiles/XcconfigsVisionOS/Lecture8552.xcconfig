@@ -1,0 +1,55 @@
+UE_VISIONOS_BUILD_VERSION = 55116800.0
+#include? "/Users/Shared/Epic Games/UE_5.8.0_SI/Engine/Intermediate/Build/Versions.xcconfig"
+#include? "/Users/mmarasigan2/Documents/Unreal Projects/Lecture8552/Intermediate/Build/Versions.xcconfig"
+
+// Unreal project-wide variables
+UE_XCODE_BUILD_MODE = Default
+UE_PRODUCT_NAME = Lecture8552
+UE_PRODUCT_NAME_STRIPPED = Lecture8552
+UE_DISPLAY_NAME = $(UE_PRODUCT_NAME)
+UE_SIGNING_PREFIX = com.YourCompany
+UE_PLATFORM_NAME = VisionOS
+UE_TARGET_NAME = Lecture8552
+UE_TARGET_PLATFORM_NAME = VisionOS
+UE_ENGINE_DIR = /Users/Shared/Epic Games/UE_5.8.0_SI/Engine
+UE_BINARIES_DIR = /Users/mmarasigan2/Documents/Unreal Projects/Lecture8552/Binaries/VisionOS
+UE_STAGED_BINARIES_DIR_BASE = Lecture8552
+UE_PROJECT_DIR = /Users/mmarasigan2/Documents/Unreal Projects/Lecture8552
+
+// Constant settings (same for all platforms and targets)
+INFOPLIST_OUTPUT_FORMAT = xml
+COMBINE_HIDPI_IMAGES = YES
+USE_HEADERMAP = NO
+ONLY_ACTIVE_ARCH = YES
+
+// Platform settings
+SUPPORTED_PLATFORMS = xrsimulator xros
+SDKROOT = xros
+
+// These settings combined will tell Xcode to write to Binaries/VisionOS (instead of something like Binaries/Development-iphoneos)
+SYMROOT = /Users/mmarasigan2/Documents/Unreal Projects/Lecture8552/Binaries
+CONFIGURATION = 
+EFFECTIVE_PLATFORM_NAME = VisionOS
+
+// Misc settings
+VALID_ARCHS = arm64
+ARCHS = arm64
+INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES
+
+// Project settings
+TARGETED_DEVICE_FAMILY = 7
+PRODUCT_BUNDLE_IDENTIFIER = $(UE_SIGNING_PREFIX).$(UE_PRODUCT_NAME_STRIPPED)
+XROS_DEPLOYMENT_TARGET = 1.0
+
+// Plist settings
+INFOPLIST_FILE = ../../Build/IOS/UBTGenerated/Info.Template.plist
+GENERATE_INFOPLIST_FILE = YES
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon
+ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO
+CURRENT_PROJECT_VERSION = $(UE_VISIONOS_BUILD_VERSION)
+MARKETING_VERSION = 1.0
+INFOPLIST_KEY_LSApplicationCategoryType = public.app-category.games
+
+// Code-signing settings
+CODE_SIGN_STYLE = Automatic
+DEVELOPMENT_TEAM = 

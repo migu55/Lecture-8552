@@ -1,0 +1,40 @@
+-fdiagnostics-absolute-paths
+-fdiagnostics-color
+-isysroot "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk"
+-L"/usr/lib/swift"
+-arch arm64
+-target arm64-apple-macos14.00
+-dead_strip
+-dynamiclib
+-headerpad_max_install_names
+-current_version 5511.68.0
+-compatibility_version 5.8.0
+-rpath @loader_path/ -rpath @executable_path/
+"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/PrivateFrameworks/MultitouchSupport.framework/Versions/Current/MultitouchSupport.tbd"
+"../Binaries/Mac/libUnrealEditor-Engine.dylib"
+-rpath "@loader_path/../../../../../../Shared/Epic Games/UE_5.8.0_SI/Engine/Binaries/Mac"
+"../Binaries/Mac/libUnrealEditor-Core.dylib"
+"../Binaries/Mac/libUnrealEditor-CoreUObject.dylib"
+"../Binaries/Mac/libUnrealEditor-InputCore.dylib"
+"../Plugins/EnhancedInput/Binaries/Mac/libUnrealEditor-EnhancedInput.dylib"
+-rpath "@loader_path/../../../../../../Shared/Epic Games/UE_5.8.0_SI/Engine/Plugins/EnhancedInput/Binaries/Mac"
+-rpath "@executable_path/../../../../../../Engine/Plugins/EnhancedInput/Binaries/Mac"
+-framework "AVFoundation"
+-framework "CoreVideo"
+-framework "CoreMedia"
+-framework "Cocoa"
+-framework "Carbon"
+-framework "IOKit"
+-framework "Security"
+-framework "UniformTypeIdentifiers"
+-framework "Network"
+-framework "ScreenCaptureKit"
+-framework "SystemConfiguration"
+-framework "Contacts"
+-install_name "@rpath/libUnrealEditor-Lecture8552.dylib"
+"/Users/mmarasigan2/Documents/Unreal Projects/Lecture8552/Intermediate/Build/Mac/arm64/UnrealEditor/Development/Lecture8552/Module.Lecture8552.gen.cpp.o"
+"/Users/mmarasigan2/Documents/Unreal Projects/Lecture8552/Intermediate/Build/Mac/arm64/UnrealEditor/Development/Lecture8552/Lecture8552.cpp.o"
+"/Users/mmarasigan2/Documents/Unreal Projects/Lecture8552/Intermediate/Build/Mac/arm64/UnrealEditor/Development/Lecture8552/Lecture8552Character.cpp.o"
+"/Users/mmarasigan2/Documents/Unreal Projects/Lecture8552/Intermediate/Build/Mac/arm64/UnrealEditor/Development/Lecture8552/Lecture8552GameMode.cpp.o"
+"/Users/mmarasigan2/Documents/Unreal Projects/Lecture8552/Intermediate/Build/Mac/arm64/UnrealEditor/Development/Lecture8552/PerModuleInline.gen.cpp.o"
+-o "/Users/mmarasigan2/Documents/Unreal Projects/Lecture8552/Binaries/Mac/libUnrealEditor-Lecture8552.dylib"
