@@ -5,7 +5,7 @@
 ===========================================================================*/
 
 #include "UObject/GeneratedCppIncludes.h"
-#include "Lecture8552GameMode.h"
+#include "Core/Lecture8552GameMode.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_UOBJECT");
@@ -35,8 +35,8 @@ struct UHT_STATICS
 		{ "Comment", "/**\n * \n */" },
 #endif
 		{ "HideCategories", "Info Rendering MovementReplication Replication Actor Input Movement Collision Rendering HLOD WorldPartition DataLayers Transformation" },
-		{ "IncludePath", "Lecture8552GameMode.h" },
-		{ "ModuleRelativePath", "Public/Lecture8552GameMode.h" },
+		{ "IncludePath", "Core/Lecture8552GameMode.h" },
+		{ "ModuleRelativePath", "Public/Core/Lecture8552GameMode.h" },
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif // WITH_METADATA
@@ -111,14 +111,14 @@ ALecture8552GameMode::~ALecture8552GameMode() {}
 #ifdef UHT_STATICS
 #error UHT_STATICS already defined
 #endif
-#define UHT_STATICS Z_CompiledInDeferFile_FID_mmarasigan2_Documents_Unreal_Projects_Lecture_5882_Lecture8552_Source_Lecture8552_Public_Lecture8552GameMode_h__Script_Lecture8552_Statics
+#define UHT_STATICS Z_CompiledInDeferFile_FID_mmarasigan2_Documents_Unreal_Projects_Lecture_5882_Lecture8552_Source_Lecture8552_Public_Core_Lecture8552GameMode_h__Script_Lecture8552_Statics
 struct UHT_STATICS
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ALecture8552GameMode, TEXT("ALecture8552GameMode"), &Z_Registration_Info_UClass_ALecture8552GameMode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ALecture8552GameMode), 2817790043U) },
+		{ Z_Construct_UClass_ALecture8552GameMode, TEXT("ALecture8552GameMode"), &Z_Registration_Info_UClass_ALecture8552GameMode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ALecture8552GameMode), 3123954979U) },
 	};
 }; // UHT_STATICS 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_mmarasigan2_Documents_Unreal_Projects_Lecture_5882_Lecture8552_Source_Lecture8552_Public_Lecture8552GameMode_h__Script_Lecture8552_79a91a87abb4d7a0931b13a9ff2c01a8bae7a81d{
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_mmarasigan2_Documents_Unreal_Projects_Lecture_5882_Lecture8552_Source_Lecture8552_Public_Core_Lecture8552GameMode_h__Script_Lecture8552_b451ca066e3edd945d599a68d1bc933fe6ef22d5{
 	TEXT("/Script/Lecture8552"),
 	UHT_STATICS::ClassInfo, UE_ARRAY_COUNT(UHT_STATICS::ClassInfo),
 	nullptr, 0,

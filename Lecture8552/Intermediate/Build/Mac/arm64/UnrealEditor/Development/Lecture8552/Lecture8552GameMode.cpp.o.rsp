@@ -384,6 +384,6 @@
 -Xclang -fno-pch-timestamp
 -fpch-validate-input-files-content
 -stdlib=libc++
-"/Users/mmarasigan2/Documents/Unreal Projects/Lecture 5882/Lecture8552/Source/Lecture8552/Private/Lecture8552GameMode.cpp"
+"/Users/mmarasigan2/Documents/Unreal Projects/Lecture 5882/Lecture8552/Source/Lecture8552/Private/Core/Lecture8552GameMode.cpp"
 -MD -MF"/Users/mmarasigan2/Documents/Unreal Projects/Lecture 5882/Lecture8552/Intermediate/Build/Mac/arm64/UnrealEditor/Development/Lecture8552/Lecture8552GameMode.cpp.d"
 -o "/Users/mmarasigan2/Documents/Unreal Projects/Lecture 5882/Lecture8552/Intermediate/Build/Mac/arm64/UnrealEditor/Development/Lecture8552/Lecture8552GameMode.cpp.o"
