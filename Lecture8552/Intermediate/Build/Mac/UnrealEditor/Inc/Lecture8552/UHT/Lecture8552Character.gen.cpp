@@ -132,14 +132,14 @@ ALecture8552Character::~ALecture8552Character() {}
 #ifdef UHT_STATICS
 #error UHT_STATICS already defined
 #endif
-#define UHT_STATICS Z_CompiledInDeferFile_FID_mmarasigan2_Documents_Unreal_Projects_Lecture8552_Source_Lecture8552_Public_Lecture8552Character_h__Script_Lecture8552_Statics
+#define UHT_STATICS Z_CompiledInDeferFile_FID_mmarasigan2_Documents_Unreal_Projects_Lecture_5882_Lecture8552_Source_Lecture8552_Public_Lecture8552Character_h__Script_Lecture8552_Statics
 struct UHT_STATICS
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_ALecture8552Character, TEXT("ALecture8552Character"), &Z_Registration_Info_UClass_ALecture8552Character, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ALecture8552Character), 3639084887U) },
 	};
 }; // UHT_STATICS 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_mmarasigan2_Documents_Unreal_Projects_Lecture8552_Source_Lecture8552_Public_Lecture8552Character_h__Script_Lecture8552_87164b0ad5da9d41dfe17312311c5b8e3211da4c{
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_mmarasigan2_Documents_Unreal_Projects_Lecture_5882_Lecture8552_Source_Lecture8552_Public_Lecture8552Character_h__Script_Lecture8552_87164b0ad5da9d41dfe17312311c5b8e3211da4c{
 	TEXT("/Script/Lecture8552"),
 	UHT_STATICS::ClassInfo, UE_ARRAY_COUNT(UHT_STATICS::ClassInfo),
 	nullptr, 0,

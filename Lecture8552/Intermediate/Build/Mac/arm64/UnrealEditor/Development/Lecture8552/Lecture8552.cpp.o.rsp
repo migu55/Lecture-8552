@@ -1,7 +1,7 @@
 -c
 -pipe
 -I"."
--I"/Users/mmarasigan2/Documents/Unreal Projects/Lecture8552/Source/Lecture8552/Private"
+-I"/Users/mmarasigan2/Documents/Unreal Projects/Lecture 5882/Lecture8552/Source/Lecture8552/Private"
 -I"../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT"
 -I"Runtime/Engine/Classes"
 -I"Runtime/Engine/Public"
@@ -292,13 +292,13 @@
 -I"Editor/AnimationEditMode/Public"
 -I"../Intermediate/Build/Mac/UnrealEditor/Inc/EditorInteractiveToolsFramework/UHT"
 -I"Editor/Experimental/EditorInteractiveToolsFramework/Public"
--I"/Users/mmarasigan2/Documents/Unreal Projects/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT"
--I"/Users/mmarasigan2/Documents/Unreal Projects/Lecture8552/Source"
--I"/Users/mmarasigan2/Documents/Unreal Projects/Lecture8552/Source/Lecture8552/Public"
+-I"/Users/mmarasigan2/Documents/Unreal Projects/Lecture 5882/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT"
+-I"/Users/mmarasigan2/Documents/Unreal Projects/Lecture 5882/Lecture8552/Source"
+-I"/Users/mmarasigan2/Documents/Unreal Projects/Lecture 5882/Lecture8552/Source/Lecture8552/Public"
 -I"../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT"
 -I"../Plugins/EnhancedInput/Source"
 -I"../Plugins/EnhancedInput/Source/EnhancedInput/Public"
--I"/Users/mmarasigan2/Documents/Unreal Projects/Lecture8552/Intermediate/Build/Mac/arm64/Lecture8552Editor/Development/UnrealEd"
+-I"/Users/mmarasigan2/Documents/Unreal Projects/Lecture 5882/Lecture8552/Intermediate/Build/Mac/arm64/Lecture8552Editor/Development/UnrealEd"
 -isystem"ThirdParty/GuidelinesSupportLibrary/GSL-1144/include"
 -isystem"ThirdParty/AtomicQueue"
 -isystem"ThirdParty/RapidJSON/1.1.0"
@@ -377,13 +377,13 @@
 -ffp-contract=off
 -arch arm64
 -isysroot "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk"
--include-pch "/Users/mmarasigan2/Documents/Unreal Projects/Lecture8552/Intermediate/Build/Mac/arm64/Lecture8552Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.gch"
--include "/Users/mmarasigan2/Documents/Unreal Projects/Lecture8552/Intermediate/Build/Mac/arm64/UnrealEditor/Development/Lecture8552/Definitions.Lecture8552.h"
+-include-pch "/Users/mmarasigan2/Documents/Unreal Projects/Lecture 5882/Lecture8552/Intermediate/Build/Mac/arm64/Lecture8552Editor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.gch"
+-include "/Users/mmarasigan2/Documents/Unreal Projects/Lecture 5882/Lecture8552/Intermediate/Build/Mac/arm64/UnrealEditor/Development/Lecture8552/Definitions.Lecture8552.h"
 -x objective-c++
 -std=c++20
 -Xclang -fno-pch-timestamp
 -fpch-validate-input-files-content
 -stdlib=libc++
-"/Users/mmarasigan2/Documents/Unreal Projects/Lecture8552/Source/Lecture8552/Lecture8552.cpp"
--MD -MF"/Users/mmarasigan2/Documents/Unreal Projects/Lecture8552/Intermediate/Build/Mac/arm64/UnrealEditor/Development/Lecture8552/Lecture8552.cpp.d"
--o "/Users/mmarasigan2/Documents/Unreal Projects/Lecture8552/Intermediate/Build/Mac/arm64/UnrealEditor/Development/Lecture8552/Lecture8552.cpp.o"
+"/Users/mmarasigan2/Documents/Unreal Projects/Lecture 5882/Lecture8552/Source/Lecture8552/Lecture8552.cpp"
+-MD -MF"/Users/mmarasigan2/Documents/Unreal Projects/Lecture 5882/Lecture8552/Intermediate/Build/Mac/arm64/UnrealEditor/Development/Lecture8552/Lecture8552.cpp.d"
+-o "/Users/mmarasigan2/Documents/Unreal Projects/Lecture 5882/Lecture8552/Intermediate/Build/Mac/arm64/UnrealEditor/Development/Lecture8552/Lecture8552.cpp.o"
