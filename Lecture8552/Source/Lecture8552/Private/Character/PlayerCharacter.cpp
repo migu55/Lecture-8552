@@ -113,6 +113,8 @@ void APlayerCharacter::OnJumpCompleted()
 {
 	GetCharacterMovement()->SetMovementMode(MOVE_Flying);
 	
+	bUseControllerRotationPitch = true;
+	
 	if (ALecture8552PlayerController* PC = Cast<ALecture8552PlayerController>(GetController()))
 	{
 		PC->AddInputFlyingContext();
@@ -136,9 +138,11 @@ void APlayerCharacter::Land()
 	{
 		
 		GetCharacterMovement()->SetMovementMode(MOVE_Walking);
+		
+		bUseControllerRotationPitch = false;
 	
-			GEngine->AddOnScreenDebugMessage(-1, 0.1f, FColor::Green, TEXT("Landing"));
-			PC->RemoveInputFlyingContext();
+		GEngine->AddOnScreenDebugMessage(-1, 0.1f, FColor::Green, TEXT("Landing"));
+		PC->RemoveInputFlyingContext();
 	}
 }
 
