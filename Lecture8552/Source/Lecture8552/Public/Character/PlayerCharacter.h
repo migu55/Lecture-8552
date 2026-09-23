@@ -47,7 +47,10 @@ protected:
 	TObjectPtr<UInputAction> FlyAction;
 	
 	UPROPERTY(EditAnywhere, Category = "Input Actions")
-	TObjectPtr<UInputAction> LandAction;
+	TObjectPtr<UInputAction> LandAction;	
+	
+	UPROPERTY(EditAnywhere, Category = "Input Actions")
+	TObjectPtr<UInputAction> InteractAction;
 	
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -55,6 +58,8 @@ protected:
 	void Look(const FInputActionValue& Value);
 	
 	void Move(const FInputActionValue& Value);
+	
+	void Interact();
 	
 	void OnJumpStart();
 	void OnJumpOngoing();

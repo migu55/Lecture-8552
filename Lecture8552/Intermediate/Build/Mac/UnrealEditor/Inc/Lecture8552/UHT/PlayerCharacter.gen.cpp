@@ -68,6 +68,10 @@ struct UHT_STATICS
 		{ "Category", "Input Actions" },
 		{ "ModuleRelativePath", "Public/Character/PlayerCharacter.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InteractAction_MetaData[] = {
+		{ "Category", "Input Actions" },
+		{ "ModuleRelativePath", "Public/Character/PlayerCharacter.h" },
+	};
 #endif // WITH_METADATA
 
 // ********** Begin Class APlayerCharacter constinit property declarations *************************
@@ -78,6 +82,7 @@ struct UHT_STATICS
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_JumpAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_FlyAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_LandAction;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_InteractAction;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 // ********** End Class APlayerCharacter constinit property declarations ***************************
 	static FTypeConstructFunc* DependentSingletons[];
@@ -95,6 +100,7 @@ const UECodeGen_Private::FObjectPropertyParams UHT_STATICS::NewProp_MoveAction =
 const UECodeGen_Private::FObjectPropertyParams UHT_STATICS::NewProp_JumpAction = { "JumpAction", nullptr, (EPropertyFlags)0x0124080000000001, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerCharacter, JumpAction), Z_Construct_UClass_UInputAction, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_JumpAction_MetaData), NewProp_JumpAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams UHT_STATICS::NewProp_FlyAction = { "FlyAction", nullptr, (EPropertyFlags)0x0124080000000001, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerCharacter, FlyAction), Z_Construct_UClass_UInputAction, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FlyAction_MetaData), NewProp_FlyAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams UHT_STATICS::NewProp_LandAction = { "LandAction", nullptr, (EPropertyFlags)0x0124080000000001, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerCharacter, LandAction), Z_Construct_UClass_UInputAction, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LandAction_MetaData), NewProp_LandAction_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams UHT_STATICS::NewProp_InteractAction = { "InteractAction", nullptr, (EPropertyFlags)0x0124080000000001, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerCharacter, InteractAction), Z_Construct_UClass_UInputAction, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InteractAction_MetaData), NewProp_InteractAction_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const UHT_STATICS::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_CameraBoom,
 	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_FollowCamera,
@@ -103,6 +109,7 @@ const UECodeGen_Private::FPropertyParamsBase* const UHT_STATICS::PropPointers[] 
 	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_JumpAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_FlyAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_LandAction,
+	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_InteractAction,
 };
 static_assert(UE_ARRAY_COUNT(UHT_STATICS::PropPointers) < 2048);
 // ********** End Class APlayerCharacter Property Definitions **************************************
@@ -172,10 +179,10 @@ APlayerCharacter::~APlayerCharacter() {}
 struct UHT_STATICS
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_APlayerCharacter, TEXT("APlayerCharacter"), &Z_Registration_Info_UClass_APlayerCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APlayerCharacter), 1738251761U) },
+		{ Z_Construct_UClass_APlayerCharacter, TEXT("APlayerCharacter"), &Z_Registration_Info_UClass_APlayerCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APlayerCharacter), 3683565958U) },
 	};
 }; // UHT_STATICS 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_mmarasigan2_Documents_Unreal_Projects_Lecture_5882_Lecture8552_Source_Lecture8552_Public_Character_PlayerCharacter_h__Script_Lecture8552_7b802aeb98f0ded85a91f94c2cb6645b0609f000{
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_mmarasigan2_Documents_Unreal_Projects_Lecture_5882_Lecture8552_Source_Lecture8552_Public_Character_PlayerCharacter_h__Script_Lecture8552_d3ea248bb04272fc8794e8cdbcb2d2ebac14cbfc{
 	TEXT("/Script/Lecture8552"),
 	UHT_STATICS::ClassInfo, UE_ARRAY_COUNT(UHT_STATICS::ClassInfo),
 	nullptr, 0,

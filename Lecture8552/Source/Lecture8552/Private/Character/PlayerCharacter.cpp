@@ -9,6 +9,9 @@
 #include "Engine/Engine.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/SpringArmComponent.h"
+#include "Interactable/Crate.h"
+#include "Interactable/Safe.h"
+#include "Interactable/Shrine.h"
 
 // Sets default values
 APlayerCharacter::APlayerCharacter()
@@ -38,6 +41,9 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 		
 		//Move
 		EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &APlayerCharacter::Move);
+		
+		//Interact
+		EnhancedInputComponent->BindAction(InteractAction, ETriggerEvent::Completed, this, &APlayerCharacter::Interact);
 		
 		//Jump
 		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Started, this, &APlayerCharacter::OnJumpStart);
@@ -84,6 +90,93 @@ void APlayerCharacter::Move(const FInputActionValue& Value)
 	
 	AddMovementInput(GetActorForwardVector(), MovementVector.X);
 	AddMovementInput(GetActorRightVector(), MovementVector.Y);
+}
+
+void APlayerCharacter::Interact()
+{
+	FVector StartLocation;
+	FRotator ViewLocation;
+	
+	GetActorEyesViewPoint(StartLocation, ViewLocation);
+	
+	FVector ForwardVector = GetViewRotation().Vector();
+	
+	FVector EndLocation = StartLocation + (ForwardVector * 200);
+	
+	FHitResult HitResult;
+	FCollisionQueryParams TraceParams;
+	TraceParams.AddIgnoredActor(this);
+	
+	// bool bHit = GetWorld()->LineTraceSingleByChannel(
+	// 	HitResult, 
+	// 	StartLocation, 
+	// 	EndLocation, 
+	// 	ECC_Visibility, 
+	// 	TraceParams);
+	//
+	// FColor LineColor = bHit ? FColor::Green : FColor::Red;
+	//
+	// DrawDebugLine(
+	// 	GetWorld(), 
+	// 	StartLocation, 
+	// 	EndLocation, 
+	// 	LineColor, 
+	// 	false, 
+	// 	2.0f, 
+	// 	0, 
+	// 	1.5f
+	// 	);
+	//
+	
+	FCollisionShape Sphere = FCollisionShape::MakeSphere(130.0f);
+	
+	bool bHit = GetWorld()->SweepSingleByChannel(
+		HitResult,
+		StartLocation,
+		EndLocation,
+		FQuat::Identity,
+		ECC_Visibility,
+		Sphere,
+		TraceParams
+		);
+	
+	DrawDebugSphere(
+		GetWorld(),
+		HitResult.Location,
+		130.0f,
+		12,
+		FColor::Yellow,
+		false,
+		2.0f);
+	
+	if (!bHit) return;
+	
+	AActor* HitActor = HitResult.GetActor();
+	UPrimitiveComponent* HitComponent = HitResult.GetComponent();
+	
+	if (!HitActor) return;
+	
+	if (IInteractable* Interactable = Cast<IInteractable>(HitActor))
+	{
+		Interactable->Interact(HitComponent);
+	}
+	
+	// if (AShrine* Shrine = Cast<AShrine>(HitActor))
+	// {
+	// 	Shrine->Activate();
+	// } else if (ACrate* Crate = Cast<ACrate>(HitActor))
+	// {
+	// 	Crate->Open();
+	// } else if (ASafe* Safe = Cast<ASafe>(HitActor))
+	// {
+	// 	if (HitComponent == Safe->LootMesh)
+	// 	{
+	// 		Safe->CollectLoot();
+	// 	} else
+	// 	{
+	// 		Safe->Open();
+	// 	}
+	// }
 }
 
 void APlayerCharacter::OnJumpStart()
