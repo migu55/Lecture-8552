@@ -4,6 +4,7 @@
 #include "Character/PlayerCharacter.h"
 
 #include "EnhancedInputComponent.h"
+#include "TimerManager.h"
 #include "Camera/CameraComponent.h"
 #include "Core/Lecture8552PlayerController.h"
 #include "Engine/Engine.h"
@@ -59,6 +60,32 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	}
 }
 
+void APlayerCharacter::RestoreEnergy(float Amount)
+{
+	// if (GEngine)
+	// {
+	// 	GEngine->AddOnScreenDebugMessage(-1, 3.00f, FColor::Green, FString::Printf(TEXT("Restoring %f"), Amount));
+	// }
+	
+	Energy = FMath::Clamp(Energy + Amount, 0.0f, MaxEnergy);
+	
+	OnEnergyChanged.Broadcast(Energy, MaxEnergy);
+	
+}
+
+void APlayerCharacter::RemoveEnergy(float Amount)
+{
+	// if (GEngine)
+	// {
+	// 	GEngine->AddOnScreenDebugMessage(-1, 3.00f, FColor::Green, FString::Printf(TEXT("Restoring %f"), Amount));
+	// }
+	
+	Energy = FMath::Clamp(Energy - Amount, 0.0f, MaxEnergy);
+	
+	OnEnergyChanged.Broadcast(Energy, MaxEnergy);
+	
+}
+
 // Called when the game starts or when spawned
 void APlayerCharacter::BeginPlay()
 {
@@ -70,6 +97,29 @@ void APlayerCharacter::BeginPlay()
 void APlayerCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	
+	if (ALecture8552PlayerController* PC = Cast<ALecture8552PlayerController>(GetController()))
+	{
+		if (PC->HasInputFlyingContext())
+		{
+			if (!GetWorldTimerManager().IsTimerActive(FlyingTimerHandle))
+			{
+				GetWorldTimerManager().SetTimer(FlyingTimerHandle, [this]()
+				{
+					RemoveEnergy(FlyingEnergyCost);
+				}, FlyingEnergyInterval, true);
+			}
+
+			if (Energy <= 0.0f)
+			{
+				Land();
+			}
+		}
+		else
+		{
+			GetWorldTimerManager().ClearTimer(FlyingTimerHandle);
+		}
+	}
 }
 
 void APlayerCharacter::Look(const FInputActionValue& Value)
@@ -225,6 +275,8 @@ void APlayerCharacter::Fly(const FInputActionValue& Value)
 
 void APlayerCharacter::Land()
 {
+	GetWorldTimerManager().ClearTimer(FlyingTimerHandle);
+
 	if (!GetController()) return;
 	
 	if (ALecture8552PlayerController* PC = Cast<ALecture8552PlayerController>(GetController()))
@@ -238,7 +290,6 @@ void APlayerCharacter::Land()
 		PC->RemoveInputFlyingContext();
 	}
 }
-
 
 
 

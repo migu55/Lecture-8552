@@ -11,6 +11,8 @@ class UInputAction;
 class UCameraComponent;
 class USpringArmComponent;
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnEnergyChanged, float, CurrentEnergy, float, MaxEnergy);
+
 UCLASS()
 class LECTURE8552_API APlayerCharacter : public ABaseCharacter
 {
@@ -25,6 +27,15 @@ public:
 	
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	
+	UPROPERTY(BlueprintAssignable, BlueprintCallable, Category = "Events")
+	FOnEnergyChanged OnEnergyChanged;
+	
+	UFUNCTION(BlueprintCallable, Category = "Energy")
+	void RestoreEnergy(float Amount);
+	
+	UFUNCTION(BlueprintCallable, Category = "Energy")
+	void RemoveEnergy(float Amount);
 
 protected:
 	
@@ -69,5 +80,20 @@ protected:
 	void Fly(const FInputActionValue& Value);
 	
 	void Land();
+	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Energy")
+	float Energy = 20.0f;	
+	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Energy")
+	float MaxEnergy = 100.0f;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Energy")
+	float FlyingEnergyCost = 5.0f;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Energy")
+	float FlyingEnergyInterval = 1.0f;
 
+private:
+	FTimerHandle FlyingTimerHandle;
+	
 };
