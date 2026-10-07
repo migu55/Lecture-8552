@@ -3,6 +3,7 @@
 
 #include "Interactable/Safe.h"
 
+#include "Components/InventoryComponent.h"
 #include "Components/SkeletalMeshComponent.h"
 #include "Components/StaticMeshComponent.h"
 #include "Engine/Engine.h"
@@ -28,23 +29,35 @@ void ASafe::Open()
 	BaseMesh->SetCollisionResponseToChannel(ECC_Visibility, ECR_Ignore);
 }
 
+
+
+void ASafe::Interact(AActor* Interactor, UPrimitiveComponent* HitComponent)
+{
+	if (HitComponent == LootMesh)
+	{
+		CollectLoot();
+		
+		if (UInventoryComponent* PlayerInv = Interactor->FindComponentByClass<UInventoryComponent>())
+		{
+			UE_LOG(LogTemp, Warning, TEXT("Add item from safe"));
+			PlayerInv->AddItem(LootItem);
+			
+		}
+	} else
+	{
+		Open();
+	}
+}
+
 void ASafe::CollectLoot()
 {
 	if (GEngine)
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 3.0f, FColor::Green, TEXT("Collected Loot"));
 	}
-}
-
-void ASafe::Interact(UPrimitiveComponent* HitComponent)
-{
-	if (HitComponent == LootMesh)
-	{
-		CollectLoot();
-	} else
-	{
-		Open();
-	}
+	
+	LootMesh->DestroyComponent();
+	LootMesh = nullptr;
 }
 
 

@@ -7,6 +7,8 @@
 #include "GameFramework/Actor.h"
 #include "Safe.generated.h"
 
+class UItemDataAsset;
+
 UCLASS()
 class LECTURE8552_API ASafe : public AActor, public IInteractable
 {
@@ -18,7 +20,7 @@ public:
 	ASafe();
 	void Open();
 	void CollectLoot();
-	virtual void Interact(UPrimitiveComponent* HitComponent) override;
+	virtual void Interact(AActor* Interactor, UPrimitiveComponent* HitComponent) override;
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
 	TObjectPtr<UStaticMeshComponent> LootMesh;
@@ -26,6 +28,9 @@ public:
 protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
 	TObjectPtr<USkeletalMeshComponent> BaseMesh;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Loot")
+	TObjectPtr<UItemDataAsset> LootItem;
 	
 	
 };

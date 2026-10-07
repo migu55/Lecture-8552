@@ -3,6 +3,7 @@
 
 #include "Interactable/Crate.h"
 
+#include "Components/InventoryComponent.h"
 #include "Components/SkeletalMeshComponent.h"
 #include "Components/StaticMeshComponent.h"
 
@@ -26,9 +27,15 @@ void ACrate::Open()
 	}
 }
 
-void ACrate::Interact(UPrimitiveComponent* HitComponent)
+void ACrate::Interact(AActor* Interactor, UPrimitiveComponent* HitComponent)
 {
 	Open();
+	if (UInventoryComponent* PlayerInv = Interactor->FindComponentByClass<UInventoryComponent>())
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Add item from crate"));
+		PlayerInv->AddItem(LootItem);
+			
+	}
 }
 
 

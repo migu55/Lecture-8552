@@ -21,6 +21,7 @@ ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent(ETypeConstructPhase);
 UPackage* Z_Construct_UPackage__Script_Lecture8552(ETypeConstructPhase);
 LECTURE8552_API UClass* Z_Construct_UClass_AShrine(ETypeConstructPhase);
 LECTURE8552_API UClass* Z_Construct_UClass_IInteractable(ETypeConstructPhase);
+LECTURE8552_API UClass* Z_Construct_UClass_UItemDataAsset(ETypeConstructPhase);
 LECTURE8552_API UClass* Z_Construct_UClass_AShrine(ETypeConstructPhase);
 // ********** End Same Module References ***********************************************************
 #define UHT_STRUCT_BASE(INIT) UE::CodeGen::ConstInit::TCompiledInObjectPtr<const FStructBaseChain>(UE::Private::AsStructBaseChain(INIT))
@@ -47,11 +48,16 @@ struct UHT_STATICS
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Interactable/Shrine.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RequiredRelic_MetaData[] = {
+		{ "Category", "Shrine Requirements" },
+		{ "ModuleRelativePath", "Public/Interactable/Shrine.h" },
+	};
 #endif // WITH_METADATA
 
 // ********** Begin Class AShrine constinit property declarations **********************************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_BaseMesh;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ShrineLight;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_RequiredRelic;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 // ********** End Class AShrine constinit property declarations ************************************
 	static FTypeConstructFunc* DependentSingletons[];
@@ -65,9 +71,11 @@ struct UHT_STATICS
 // ********** Begin Class AShrine Property Definitions *********************************************
 const UECodeGen_Private::FObjectPropertyParams UHT_STATICS::NewProp_BaseMesh = { "BaseMesh", nullptr, (EPropertyFlags)0x01240800000a001d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, nullptr, nullptr, 1, STRUCT_OFFSET(AShrine, BaseMesh), Z_Construct_UClass_UStaticMeshComponent, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_BaseMesh_MetaData), NewProp_BaseMesh_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams UHT_STATICS::NewProp_ShrineLight = { "ShrineLight", nullptr, (EPropertyFlags)0x01240800000a001d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, nullptr, nullptr, 1, STRUCT_OFFSET(AShrine, ShrineLight), Z_Construct_UClass_UPointLightComponent, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ShrineLight_MetaData), NewProp_ShrineLight_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams UHT_STATICS::NewProp_RequiredRelic = { "RequiredRelic", nullptr, (EPropertyFlags)0x0124080000000015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, nullptr, nullptr, 1, STRUCT_OFFSET(AShrine, RequiredRelic), Z_Construct_UClass_UItemDataAsset, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RequiredRelic_MetaData), NewProp_RequiredRelic_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const UHT_STATICS::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_BaseMesh,
 	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_ShrineLight,
+	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_RequiredRelic,
 };
 static_assert(UE_ARRAY_COUNT(UHT_STATICS::PropPointers) < 2048);
 // ********** End Class AShrine Property Definitions ***********************************************
@@ -140,10 +148,10 @@ AShrine::~AShrine() {}
 struct UHT_STATICS
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AShrine, TEXT("AShrine"), &Z_Registration_Info_UClass_AShrine, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AShrine), 2272015233U) },
+		{ Z_Construct_UClass_AShrine, TEXT("AShrine"), &Z_Registration_Info_UClass_AShrine, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AShrine), 18830501U) },
 	};
 }; // UHT_STATICS 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_mmarasigan2_Documents_Unreal_Projects_Lecture_5882_Lecture8552_Source_Lecture8552_Public_Interactable_Shrine_h__Script_Lecture8552_d6e9eec585ddab4265914235f23b03ca84e519cd{
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_mmarasigan2_Documents_Unreal_Projects_Lecture_5882_Lecture8552_Source_Lecture8552_Public_Interactable_Shrine_h__Script_Lecture8552_5fc16103bb1c92558e0d40c2cf504b3d4ec0a468{
 	TEXT("/Script/Lecture8552"),
 	UHT_STATICS::ClassInfo, UE_ARRAY_COUNT(UHT_STATICS::ClassInfo),
 	nullptr, 0,

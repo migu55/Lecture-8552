@@ -6,7 +6,9 @@
 #include "EnhancedInputComponent.h"
 #include "TimerManager.h"
 #include "Camera/CameraComponent.h"
+#include "Components/InventoryComponent.h"
 #include "Core/Lecture8552PlayerController.h"
+#include "Data/ItemDataAsset.h"
 #include "Engine/Engine.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/SpringArmComponent.h"
@@ -28,6 +30,8 @@ APlayerCharacter::APlayerCharacter()
 	FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
 	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName);
 	FollowCamera->bUsePawnControlRotation = false;
+	
+	InventoryComponent = CreateDefaultSubobject<UInventoryComponent>(TEXT("InventoryComponent"));
 }
 
 // Called to bind functionality to input
@@ -57,6 +61,9 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 		
 		//Land
 		EnhancedInputComponent->BindAction(LandAction, ETriggerEvent::Triggered, this, &APlayerCharacter::Land);
+		
+		//UsePotion
+		EnhancedInputComponent->BindAction(UsePotionAction, ETriggerEvent::Completed, this, &APlayerCharacter::UsePotion);
 	}
 }
 
@@ -208,7 +215,7 @@ void APlayerCharacter::Interact()
 	
 	if (IInteractable* Interactable = Cast<IInteractable>(HitActor))
 	{
-		Interactable->Interact(HitComponent);
+		Interactable->Interact(this, HitComponent);
 	}
 	
 	// if (AShrine* Shrine = Cast<AShrine>(HitActor))
@@ -288,6 +295,21 @@ void APlayerCharacter::Land()
 	
 		GEngine->AddOnScreenDebugMessage(-1, 0.1f, FColor::Green, TEXT("Landing"));
 		PC->RemoveInputFlyingContext();
+	}
+}
+
+void APlayerCharacter::UsePotion()
+{
+	if (InventoryComponent->GetItems().Contains(EnergyPotion))
+	{
+		InventoryComponent->RemoveItem(EnergyPotion);
+		RestoreEnergy(EnergyPotion->ItemData.RestoreAmount);
+	} else
+	{
+		if (GEngine)
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 2.00f, FColor::Red, TEXT("No Potions"));
+		}
 	}
 }
 

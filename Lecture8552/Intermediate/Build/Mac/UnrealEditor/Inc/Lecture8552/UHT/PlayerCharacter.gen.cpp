@@ -22,6 +22,8 @@ UPackage* Z_Construct_UPackage__Script_Lecture8552(ETypeConstructPhase);
 LECTURE8552_API UClass* Z_Construct_UClass_ABaseCharacter(ETypeConstructPhase);
 LECTURE8552_API UFunction* Z_Construct_UDelegateFunction_Lecture8552_OnEnergyChanged__DelegateSignature(ETypeConstructPhase);
 LECTURE8552_API UClass* Z_Construct_UClass_APlayerCharacter(ETypeConstructPhase);
+LECTURE8552_API UClass* Z_Construct_UClass_UInventoryComponent(ETypeConstructPhase);
+LECTURE8552_API UClass* Z_Construct_UClass_UItemDataAsset(ETypeConstructPhase);
 LECTURE8552_API UClass* Z_Construct_UClass_APlayerCharacter(ETypeConstructPhase);
 // ********** End Same Module References ***********************************************************
 #define UHT_STRUCT_BASE(INIT) UE::CodeGen::ConstInit::TCompiledInObjectPtr<const FStructBaseChain>(UE::Private::AsStructBaseChain(INIT))
@@ -234,6 +236,10 @@ struct UHT_STATICS
 		{ "Category", "Input Actions" },
 		{ "ModuleRelativePath", "Public/Character/PlayerCharacter.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_UsePotionAction_MetaData[] = {
+		{ "Category", "Input Actions" },
+		{ "ModuleRelativePath", "Public/Character/PlayerCharacter.h" },
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Energy_MetaData[] = {
 		{ "Category", "Energy" },
 		{ "ModuleRelativePath", "Public/Character/PlayerCharacter.h" },
@@ -250,6 +256,15 @@ struct UHT_STATICS
 		{ "Category", "Energy" },
 		{ "ModuleRelativePath", "Public/Character/PlayerCharacter.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InventoryComponent_MetaData[] = {
+		{ "Category", "Components" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Character/PlayerCharacter.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EnergyPotion_MetaData[] = {
+		{ "Category", "Consumables" },
+		{ "ModuleRelativePath", "Public/Character/PlayerCharacter.h" },
+	};
 #endif // WITH_METADATA
 
 // ********** Begin Class APlayerCharacter constinit property declarations *************************
@@ -262,10 +277,13 @@ struct UHT_STATICS
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_FlyAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_LandAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_InteractAction;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_UsePotionAction;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_Energy;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_MaxEnergy;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_FlyingEnergyCost;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_FlyingEnergyInterval;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_InventoryComponent;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_EnergyPotion;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 // ********** End Class APlayerCharacter constinit property declarations ***************************
 	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
@@ -294,10 +312,13 @@ const UECodeGen_Private::FObjectPropertyParams UHT_STATICS::NewProp_JumpAction =
 const UECodeGen_Private::FObjectPropertyParams UHT_STATICS::NewProp_FlyAction = { "FlyAction", nullptr, (EPropertyFlags)0x0124080000000001, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerCharacter, FlyAction), Z_Construct_UClass_UInputAction, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FlyAction_MetaData), NewProp_FlyAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams UHT_STATICS::NewProp_LandAction = { "LandAction", nullptr, (EPropertyFlags)0x0124080000000001, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerCharacter, LandAction), Z_Construct_UClass_UInputAction, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LandAction_MetaData), NewProp_LandAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams UHT_STATICS::NewProp_InteractAction = { "InteractAction", nullptr, (EPropertyFlags)0x0124080000000001, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerCharacter, InteractAction), Z_Construct_UClass_UInputAction, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InteractAction_MetaData), NewProp_InteractAction_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams UHT_STATICS::NewProp_UsePotionAction = { "UsePotionAction", nullptr, (EPropertyFlags)0x0124080000000001, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerCharacter, UsePotionAction), Z_Construct_UClass_UInputAction, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_UsePotionAction_MetaData), NewProp_UsePotionAction_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams UHT_STATICS::NewProp_Energy = { "Energy", nullptr, (EPropertyFlags)0x0020080000000015, UECodeGen_Private::EPropertyGenFlags::Float, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerCharacter, Energy), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Energy_MetaData), NewProp_Energy_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams UHT_STATICS::NewProp_MaxEnergy = { "MaxEnergy", nullptr, (EPropertyFlags)0x0020080000000015, UECodeGen_Private::EPropertyGenFlags::Float, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerCharacter, MaxEnergy), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MaxEnergy_MetaData), NewProp_MaxEnergy_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams UHT_STATICS::NewProp_FlyingEnergyCost = { "FlyingEnergyCost", nullptr, (EPropertyFlags)0x0020080000000015, UECodeGen_Private::EPropertyGenFlags::Float, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerCharacter, FlyingEnergyCost), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FlyingEnergyCost_MetaData), NewProp_FlyingEnergyCost_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams UHT_STATICS::NewProp_FlyingEnergyInterval = { "FlyingEnergyInterval", nullptr, (EPropertyFlags)0x0020080000000015, UECodeGen_Private::EPropertyGenFlags::Float, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerCharacter, FlyingEnergyInterval), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FlyingEnergyInterval_MetaData), NewProp_FlyingEnergyInterval_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams UHT_STATICS::NewProp_InventoryComponent = { "InventoryComponent", nullptr, (EPropertyFlags)0x01240800000a001d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerCharacter, InventoryComponent), Z_Construct_UClass_UInventoryComponent, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InventoryComponent_MetaData), NewProp_InventoryComponent_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams UHT_STATICS::NewProp_EnergyPotion = { "EnergyPotion", nullptr, (EPropertyFlags)0x0124080000000015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, nullptr, nullptr, 1, STRUCT_OFFSET(APlayerCharacter, EnergyPotion), Z_Construct_UClass_UItemDataAsset, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EnergyPotion_MetaData), NewProp_EnergyPotion_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const UHT_STATICS::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_OnEnergyChanged,
 	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_CameraBoom,
@@ -308,10 +329,13 @@ const UECodeGen_Private::FPropertyParamsBase* const UHT_STATICS::PropPointers[] 
 	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_FlyAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_LandAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_InteractAction,
+	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_UsePotionAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_Energy,
 	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_MaxEnergy,
 	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_FlyingEnergyCost,
 	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_FlyingEnergyInterval,
+	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_InventoryComponent,
+	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_EnergyPotion,
 };
 static_assert(UE_ARRAY_COUNT(UHT_STATICS::PropPointers) < 2048);
 // ********** End Class APlayerCharacter Property Definitions **************************************
@@ -386,10 +410,10 @@ APlayerCharacter::~APlayerCharacter() {}
 struct UHT_STATICS
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_APlayerCharacter, TEXT("APlayerCharacter"), &Z_Registration_Info_UClass_APlayerCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APlayerCharacter), 751413247U) },
+		{ Z_Construct_UClass_APlayerCharacter, TEXT("APlayerCharacter"), &Z_Registration_Info_UClass_APlayerCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APlayerCharacter), 1275715621U) },
 	};
 }; // UHT_STATICS 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_mmarasigan2_Documents_Unreal_Projects_Lecture_5882_Lecture8552_Source_Lecture8552_Public_Character_PlayerCharacter_h__Script_Lecture8552_6ceb56cc0bc06d1ea69dd0e54b5e1af4075543c5{
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_mmarasigan2_Documents_Unreal_Projects_Lecture_5882_Lecture8552_Source_Lecture8552_Public_Character_PlayerCharacter_h__Script_Lecture8552_bd5f80162325889e7fc0fe043f2c9bcf35e3f6be{
 	TEXT("/Script/Lecture8552"),
 	UHT_STATICS::ClassInfo, UE_ARRAY_COUNT(UHT_STATICS::ClassInfo),
 	nullptr, 0,

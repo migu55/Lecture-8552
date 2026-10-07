@@ -3,6 +3,7 @@
 
 #include "Interactable/Shrine.h"
 
+#include "Components/InventoryComponent.h"
 #include "Components/PointLightComponent.h"
 #include "Components/StaticMeshComponent.h"
 #include "Engine/Engine.h"
@@ -34,9 +35,29 @@ void AShrine::Activate()
 	}
 }
 
-void AShrine::Interact(UPrimitiveComponent* HitComponent)
+void AShrine::Interact(AActor* Interactor, UPrimitiveComponent* HitComponent)
 {
-	Activate();
+	if (bIsActive || !Interactor)
+	{
+		return;
+	}
+	
+	UInventoryComponent* InvComp = Interactor->FindComponentByClass<UInventoryComponent>();
+	if (!InvComp)
+	{
+		return;
+	}
+	if (RequiredRelic && InvComp->GetItems().Contains(RequiredRelic))
+	{
+		InvComp->RemoveItem(RequiredRelic);
+		Activate();
+	} else
+	{
+		if (GEngine)
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 2.00f, FColor::Red, TEXT("Missing Relic"));
+		}
+	}
 }
 
 

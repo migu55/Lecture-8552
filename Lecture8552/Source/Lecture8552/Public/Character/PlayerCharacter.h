@@ -6,6 +6,8 @@
 #include "BaseCharacter.h"
 #include "PlayerCharacter.generated.h"
 
+class UItemDataAsset;
+class UInventoryComponent;
 struct FInputActionValue;
 class UInputAction;
 class UCameraComponent;
@@ -63,6 +65,9 @@ protected:
 	UPROPERTY(EditAnywhere, Category = "Input Actions")
 	TObjectPtr<UInputAction> InteractAction;
 	
+	UPROPERTY(EditAnywhere, Category = "Input Actions")
+	TObjectPtr<UInputAction> UsePotionAction;
+	
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 	
@@ -81,6 +86,8 @@ protected:
 	
 	void Land();
 	
+	void UsePotion();
+	
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Energy")
 	float Energy = 20.0f;	
 	
@@ -92,6 +99,12 @@ protected:
 	
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Energy")
 	float FlyingEnergyInterval = 1.0f;
+	
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
+	TObjectPtr<UInventoryComponent> InventoryComponent;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Consumables")
+	TObjectPtr<UItemDataAsset> EnergyPotion;
 
 private:
 	FTimerHandle FlyingTimerHandle;

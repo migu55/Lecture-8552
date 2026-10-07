@@ -3144,17 +3144,190 @@
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT/OverlapZone.generated.h \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT/EnergyPond.generated.h \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT/Interactable.gen.cpp \
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT/InventoryComponent.gen.cpp \
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Public/Components/InventoryComponent.h \
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT/InventoryComponent.generated.h \
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT/ItemDataAsset.gen.cpp \
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Public/Data/ItemDataAsset.h \
+  Runtime/Engine/Classes/Engine/DataAsset.h \
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT/ItemDataAsset.generated.h \
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT/ItemSlot.gen.cpp \
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Public/UI/ItemSlot.h \
+  Runtime/UMG/Public/Blueprint/UserWidget.h \
+  Runtime/UMG/Public/Blueprint/UMGSequencePlayMode.h \
+  Runtime/Core/Public/CoreTypes.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/UMGSequencePlayMode.generated.h \
+  Runtime/Core/Public/Templates/NoDestroy.h \
+  Runtime/UMG/Public/Blueprint/WidgetChild.h \
+  Runtime/CoreUObject/Public/UObject/WeakObjectPtr.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/WidgetChild.generated.h \
+  Runtime/CoreUObject/Public/UObject/ObjectSaveContext.h \
+  Runtime/Core/Public/Containers/Map.h \
+  Runtime/Core/Public/Containers/UnrealString.h \
+  Runtime/Core/Public/HAL/Platform.h \
+  Runtime/Core/Public/Serialization/ArchiveSavePackageData.h \
+  Runtime/Core/Public/Templates/RefCounting.h \
+  Runtime/CoreUObject/Public/UObject/CookEnums.h \
+  Runtime/Core/Public/HAL/PlatformMath.h \
+  Runtime/Core/Public/Misc/EnumClassFlags.h \
+  Runtime/Core/Public/UObject/NameTypes.h \
+  Runtime/CoreUObject/Public/UObject/ObjectSaveOverride.h \
+  Runtime/CoreUObject/Public/UObject/FieldPath.h \
+  Runtime/CoreUObject/Public/Cooker/BuildResultDependenciesMap.h \
+  Runtime/CoreUObject/Public/Cooker/CookDependency.h \
+  Runtime/Core/Public/Containers/StringView.h \
+  Runtime/Core/Public/HAL/PreprocessorHelpers.h \
+  Runtime/Core/Public/Hash/Blake3.h \
+  Runtime/Core/Public/Logging/LogVerbosity.h \
+  Runtime/Core/Public/Serialization/CompactBinary.h \
+  Runtime/Core/Public/Templates/Function.h \
+  Runtime/Core/Public/Templates/UniquePtr.h \
+  Runtime/SlateCore/Public/Styling/SlateColor.h \
+  Runtime/SlateCore/Public/Layout/Geometry.h \
+  Runtime/SlateCore/Public/Input/CursorReply.h \
+  Runtime/SlateCore/Public/Input/Events.h \
+  Runtime/SlateCore/Public/Input/Reply.h \
+  Runtime/SlateCore/Public/Widgets/SWidget.h \
+  Runtime/Engine/Classes/Kismet/BlueprintFunctionLibrary.h \
+  Runtime/SlateCore/Public/Layout/Margin.h \
+  Runtime/UMG/Public/Components/SlateWrapperTypes.h \
+  Runtime/Core/Public/Misc/Attribute.h \
+  Runtime/Slate/Public/Widgets/Input/IVirtualKeyboardEntry.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/SlateWrapperTypes.generated.h \
+  Runtime/UMG/Public/Components/Widget.h \
+  Runtime/UMG/Public/Binding/States/WidgetStateBitfield.h \
+  Runtime/Core/Public/Containers/StaticArray.h \
+  Runtime/Core/Public/Containers/ContainerAllocationPolicies.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/WidgetStateBitfield.generated.h \
+  Runtime/FieldNotification/Public/FieldNotificationDeclaration.h \
+  Runtime/FieldNotification/Public/FieldNotificationId.h \
+  Runtime/FieldNotification/Public/IFieldNotificationClassDescriptor.h \
+  Runtime/FieldNotification/Public/INotifyFieldValueChanged.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/FieldNotification/UHT/INotifyFieldValueChanged.generated.h \
+  Runtime/SlateCore/Public/Layout/Visibility.h \
+  Runtime/SlateCore/Public/Types/SlateStructs.h \
+  Runtime/UMG/Public/Components/Visual.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/Visual.generated.h \
+  Runtime/SlateCore/Public/Styling/SlateBrush.h \
+  Runtime/CoreUObject/Public/UObject/TextProperty.h \
+  Runtime/UMG/Public/Slate/WidgetTransform.h \
+  Runtime/Core/Public/Math/TransformCalculus2D.h \
+  Runtime/SlateCore/Public/Rendering/SlateRenderTransform.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/WidgetTransform.generated.h \
+  Runtime/CoreUObject/Public/UObject/UObjectThreadContext.h \
+  Runtime/Engine/Classes/GameFramework/PlayerController.h \
+  Runtime/UMG/Public/Blueprint/WidgetNavigation.h \
+  Runtime/CoreUObject/Public/StructUtils/InstancedStruct.h \
+  Runtime/CoreUObject/Public/StructUtils/StructUtils.h \
+  Runtime/Core/Public/Templates/UnrealTypeTraits.h \
+  Runtime/Core/Public/Templates/ValueOrError.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/CoreUObject/UHT/InstancedStruct.generated.h \
+  Runtime/SlateCore/Public/Types/NavigationMetaData.h \
+  Runtime/SlateCore/Public/Input/NavigationReply.h \
+  Runtime/SlateCore/Public/Input/NavigationRouting.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/SlateCore/UHT/NavigationRouting.generated.h \
+  Runtime/SlateCore/Public/Input/NavigationMethod.h \
+  Runtime/SlateCore/Public/Input/HittestGrid.h \
+  Runtime/SlateCore/Public/FastUpdate/SlateInvalidationWidgetSortOrder.h \
+  Runtime/SlateCore/Public/Layout/SlateRect.h \
+  Runtime/SlateCore/Public/Layout/ArrangedWidget.h \
+  Runtime/SlateCore/Public/Layout/Clipping.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/SlateCore/UHT/NavigationMethod.generated.h \
+  Runtime/SlateCore/Public/Types/ISlateMetaData.h \
+  Runtime/SlateCore/Public/Types/SlateEnums.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/WidgetNavigation.generated.h \
+  Runtime/SlateCore/Public/Widgets/WidgetPixelSnapping.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/Widget.generated.h \
+  Runtime/UMG/Public/Components/NamedSlotInterface.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/NamedSlotInterface.generated.h \
+  Runtime/Engine/Classes/Engine/World.h \
+  Runtime/Engine/Classes/Engine/LocalPlayer.h \
+  Runtime/Slate/Public/Widgets/Layout/Anchors.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Slate/UHT/Anchors.generated.h \
+  Runtime/Core/Public/Logging/MessageLog.h \
+  Runtime/Core/Public/Stats/Stats.h Runtime/Engine/Public/EngineStats.h \
+  Runtime/SlateCore/Public/SlateGlobals.h \
+  Runtime/UMG/Public/Animation/WidgetAnimationEvents.h \
+  Runtime/Core/Public/Delegates/DelegateCombinations.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/WidgetAnimationEvents.generated.h \
+  Runtime/UMG/Public/Animation/WidgetAnimationHandle.h \
+  Runtime/Core/Public/Templates/SharedPointerFwd.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/WidgetAnimationHandle.generated.h \
+  Runtime/UMG/Public/Animation/WidgetAnimationState.h \
+  Runtime/UMG/Public/Animation/UMGSequenceTickManager.h \
+  Runtime/MovieScene/Public/MovieSceneLatentActionManager.h \
+  Runtime/Core/Public/Delegates/Delegate.h \
+  Runtime/Core/Public/Containers/ContainersFwd.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/UMGSequenceTickManager.generated.h \
+  Runtime/MovieScene/Public/Evaluation/MovieScenePlayback.h \
+  Runtime/MovieScene/Public/Evaluation/MovieSceneSequenceTransform.h \
+  Runtime/MovieScene/Public/MovieSceneFwd.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/MovieScene/UHT/MovieSceneFwd.generated.h \
+  Runtime/Core/Public/Misc/AssertionMacros.h \
+  Runtime/Core/Public/Misc/FrameNumber.h \
+  Runtime/Core/Public/Misc/FrameTime.h \
+  Runtime/MovieScene/Public/Evaluation/MovieSceneTimeTransform.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/MovieScene/UHT/MovieSceneTimeTransform.generated.h \
+  Runtime/MovieScene/Public/Evaluation/MovieSceneTimeWarping.h \
+  Runtime/Core/Public/Math/Range.h Runtime/Core/Public/Math/RangeBound.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/MovieScene/UHT/MovieSceneTimeWarping.generated.h \
+  Runtime/MovieScene/Public/Variants/MovieSceneTimeWarpVariant.h \
+  Runtime/MovieScene/Public/Variants/MovieSceneNumericVariant.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/MovieScene/UHT/MovieSceneNumericVariant.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/MovieScene/UHT/MovieSceneTimeWarpVariant.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/MovieScene/UHT/MovieSceneSequenceTransform.generated.h \
+  Runtime/Core/Public/HAL/PlatformCrt.h \
+  Runtime/Core/Public/Math/NumericLimits.h \
+  Runtime/Core/Public/Misc/FrameRate.h \
+  Runtime/Core/Public/Misc/Optional.h \
+  Runtime/MovieScene/Public/MovieSceneTimeHelpers.h \
+  Runtime/Core/Public/Math/UnrealMathUtility.h \
+  Runtime/MovieScene/Public/Evaluation/MovieScenePlaybackManager.h \
+  Runtime/MovieScene/Public/EntitySystem/MovieSceneSharedPlaybackState.h \
+  Runtime/MovieScene/Public/Compilation/MovieSceneCompiledDataID.h \
+  Runtime/MovieScene/Public/EntitySystem/MovieSceneSequenceInstanceHandle.h \
+  Runtime/MovieScene/Public/EntitySystem/MovieSceneComponentDebug.h \
+  Runtime/MovieScene/Public/EntitySystem/MovieSceneEntitySystemTypes.h \
+  Runtime/Core/Public/Algo/Find.h \
+  Runtime/Core/Public/Containers/ArrayView.h \
+  Runtime/MovieScene/Public/EntitySystem/MovieSceneEntityIDs.h \
+  Runtime/Core/Public/Misc/Guid.h \
+  Runtime/Core/Public/Templates/TypeHash.h \
+  Runtime/Core/Public/HAL/CriticalSection.h \
+  Runtime/Core/Public/Math/UnrealMathSSE.h \
+  Runtime/Core/Public/Misc/TransactionallySafeRWLock.h \
+  Runtime/Core/Public/Templates/UnrealTemplate.h \
+  Runtime/Core/Public/Math/Vector4.h \
+  Runtime/CoreUObject/Public/UObject/ObjectKey.h \
+  Runtime/Core/Public/Misc/InlineValue.h \
+  Runtime/Core/Public/HAL/UnrealMemory.h \
+  Runtime/Core/Public/Templates/MemoryOps.h \
+  Runtime/Core/Public/Templates/PointerIsConvertibleFromTo.h \
+  Runtime/Core/Public/Templates/Decay.h \
+  Runtime/Core/Public/Templates/TypeCompatibleBytes.h \
+  Runtime/MovieScene/Public/Evaluation/MovieSceneEvaluationOperand.h \
+  Runtime/MovieScene/Public/MovieSceneSequenceID.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/MovieScene/UHT/MovieSceneSequenceID.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/MovieScene/UHT/MovieSceneEvaluationOperand.generated.h \
+  Runtime/MovieScene/Public/Evaluation/MovieScenePlaybackCapabilities.h \
+  Runtime/MovieScene/Public/Evaluation/IMovieScenePlaybackCapability.h \
+  Runtime/Core/Public/Templates/SharedPointer.h \
+  Runtime/MovieScene/Public/EntitySystem/RelativePtr.h \
+  Runtime/Core/Public/Templates/AlignmentTemplates.h \
+  Runtime/MovieScene/Public/Evaluation/MovieScenePreAnimatedState.h \
+  Runtime/Core/Public/UObject/WeakObjectPtrTemplates.h \
+  Runtime/Core/Public/Misc/QualifiedFrameTime.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/UserWidget.generated.h \
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT/ItemSlot.generated.h \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT/Lecture8552.init.gen.cpp \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT/Lecture8552GameMode.gen.cpp \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Public/Core/Lecture8552GameMode.h \
   Runtime/Engine/Classes/GameFramework/GameModeBase.h \
-  Runtime/Core/Public/Misc/Guid.h \
   Runtime/Engine/Classes/GameFramework/Info.h \
   Runtime/Engine/Classes/Engine/ServerStatReplicator.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/ServerStatReplicator.generated.h \
   Runtime/CoreOnline/Public/Online/CoreOnline.h \
   Runtime/Net/Core/Public/Net/Core/Connection/NetEnums.h \
-  Runtime/Engine/Classes/GameFramework/PlayerController.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/GameModeBase.generated.h \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT/Lecture8552GameMode.generated.h \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT/Lecture8552PlayerController.gen.cpp \

@@ -7,6 +7,7 @@
 #include "GameFramework/Actor.h"
 #include "Shrine.generated.h"
 
+class UItemDataAsset;
 class UPointLightComponent;
 
 UCLASS()
@@ -23,7 +24,7 @@ public:
 	
 	bool bIsActive = false;
 	
-	virtual void Interact(UPrimitiveComponent* HitComponent) override;
+	virtual void Interact(AActor* Interactor, UPrimitiveComponent* HitComponent) override;
 	
 protected:
 	
@@ -32,5 +33,8 @@ protected:
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
 	TObjectPtr<UPointLightComponent> ShrineLight;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Shrine Requirements")
+	TObjectPtr<UItemDataAsset> RequiredRelic;
 	
 };

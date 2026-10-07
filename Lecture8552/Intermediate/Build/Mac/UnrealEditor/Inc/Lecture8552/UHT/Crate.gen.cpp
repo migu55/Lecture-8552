@@ -22,6 +22,7 @@ UPackage* Z_Construct_UPackage__Script_Lecture8552(ETypeConstructPhase);
 LECTURE8552_API UClass* Z_Construct_UClass_ACrate(ETypeConstructPhase);
 LECTURE8552_API UClass* Z_Construct_UClass_ACrate(ETypeConstructPhase);
 LECTURE8552_API UClass* Z_Construct_UClass_IInteractable(ETypeConstructPhase);
+LECTURE8552_API UClass* Z_Construct_UClass_UItemDataAsset(ETypeConstructPhase);
 // ********** End Same Module References ***********************************************************
 #define UHT_STRUCT_BASE(INIT) UE::CodeGen::ConstInit::TCompiledInObjectPtr<const FStructBaseChain>(UE::Private::AsStructBaseChain(INIT))
 
@@ -47,11 +48,16 @@ struct UHT_STATICS
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Interactable/Crate.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LootItem_MetaData[] = {
+		{ "Category", "Loot" },
+		{ "ModuleRelativePath", "Public/Interactable/Crate.h" },
+	};
 #endif // WITH_METADATA
 
 // ********** Begin Class ACrate constinit property declarations ***********************************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_BaseMesh;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Lid;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_LootItem;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 // ********** End Class ACrate constinit property declarations *************************************
 	static FTypeConstructFunc* DependentSingletons[];
@@ -65,9 +71,11 @@ struct UHT_STATICS
 // ********** Begin Class ACrate Property Definitions **********************************************
 const UECodeGen_Private::FObjectPropertyParams UHT_STATICS::NewProp_BaseMesh = { "BaseMesh", nullptr, (EPropertyFlags)0x01240800000a001d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, nullptr, nullptr, 1, STRUCT_OFFSET(ACrate, BaseMesh), Z_Construct_UClass_UStaticMeshComponent, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_BaseMesh_MetaData), NewProp_BaseMesh_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams UHT_STATICS::NewProp_Lid = { "Lid", nullptr, (EPropertyFlags)0x01240800000a001d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, nullptr, nullptr, 1, STRUCT_OFFSET(ACrate, Lid), Z_Construct_UClass_USkeletalMeshComponent, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Lid_MetaData), NewProp_Lid_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams UHT_STATICS::NewProp_LootItem = { "LootItem", nullptr, (EPropertyFlags)0x0124080000000015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, nullptr, nullptr, 1, STRUCT_OFFSET(ACrate, LootItem), Z_Construct_UClass_UItemDataAsset, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LootItem_MetaData), NewProp_LootItem_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const UHT_STATICS::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_BaseMesh,
 	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_Lid,
+	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_LootItem,
 };
 static_assert(UE_ARRAY_COUNT(UHT_STATICS::PropPointers) < 2048);
 // ********** End Class ACrate Property Definitions ************************************************
@@ -140,10 +148,10 @@ ACrate::~ACrate() {}
 struct UHT_STATICS
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ACrate, TEXT("ACrate"), &Z_Registration_Info_UClass_ACrate, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACrate), 3468558979U) },
+		{ Z_Construct_UClass_ACrate, TEXT("ACrate"), &Z_Registration_Info_UClass_ACrate, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACrate), 1590939240U) },
 	};
 }; // UHT_STATICS 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_mmarasigan2_Documents_Unreal_Projects_Lecture_5882_Lecture8552_Source_Lecture8552_Public_Interactable_Crate_h__Script_Lecture8552_47ad6aa18745e4219d328348c708684e1783c04b{
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_mmarasigan2_Documents_Unreal_Projects_Lecture_5882_Lecture8552_Source_Lecture8552_Public_Interactable_Crate_h__Script_Lecture8552_4fb8114e9c19492929a4304d50a6ed9e8abed143{
 	TEXT("/Script/Lecture8552"),
 	UHT_STATICS::ClassInfo, UE_ARRAY_COUNT(UHT_STATICS::ClassInfo),
 	nullptr, 0,

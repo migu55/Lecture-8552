@@ -21,6 +21,7 @@ ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent(ETypeConstructPhase);
 UPackage* Z_Construct_UPackage__Script_Lecture8552(ETypeConstructPhase);
 LECTURE8552_API UClass* Z_Construct_UClass_ASafe(ETypeConstructPhase);
 LECTURE8552_API UClass* Z_Construct_UClass_IInteractable(ETypeConstructPhase);
+LECTURE8552_API UClass* Z_Construct_UClass_UItemDataAsset(ETypeConstructPhase);
 LECTURE8552_API UClass* Z_Construct_UClass_ASafe(ETypeConstructPhase);
 // ********** End Same Module References ***********************************************************
 #define UHT_STRUCT_BASE(INIT) UE::CodeGen::ConstInit::TCompiledInObjectPtr<const FStructBaseChain>(UE::Private::AsStructBaseChain(INIT))
@@ -47,11 +48,16 @@ struct UHT_STATICS
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Interactable/Safe.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LootItem_MetaData[] = {
+		{ "Category", "Loot" },
+		{ "ModuleRelativePath", "Public/Interactable/Safe.h" },
+	};
 #endif // WITH_METADATA
 
 // ********** Begin Class ASafe constinit property declarations ************************************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_LootMesh;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_BaseMesh;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_LootItem;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 // ********** End Class ASafe constinit property declarations **************************************
 	static FTypeConstructFunc* DependentSingletons[];
@@ -65,9 +71,11 @@ struct UHT_STATICS
 // ********** Begin Class ASafe Property Definitions ***********************************************
 const UECodeGen_Private::FObjectPropertyParams UHT_STATICS::NewProp_LootMesh = { "LootMesh", nullptr, (EPropertyFlags)0x01140000000a001d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, nullptr, nullptr, 1, STRUCT_OFFSET(ASafe, LootMesh), Z_Construct_UClass_UStaticMeshComponent, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LootMesh_MetaData), NewProp_LootMesh_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams UHT_STATICS::NewProp_BaseMesh = { "BaseMesh", nullptr, (EPropertyFlags)0x01240800000a001d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, nullptr, nullptr, 1, STRUCT_OFFSET(ASafe, BaseMesh), Z_Construct_UClass_USkeletalMeshComponent, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_BaseMesh_MetaData), NewProp_BaseMesh_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams UHT_STATICS::NewProp_LootItem = { "LootItem", nullptr, (EPropertyFlags)0x0124080000000015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, nullptr, nullptr, 1, STRUCT_OFFSET(ASafe, LootItem), Z_Construct_UClass_UItemDataAsset, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LootItem_MetaData), NewProp_LootItem_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const UHT_STATICS::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_LootMesh,
 	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_BaseMesh,
+	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_LootItem,
 };
 static_assert(UE_ARRAY_COUNT(UHT_STATICS::PropPointers) < 2048);
 // ********** End Class ASafe Property Definitions *************************************************
@@ -140,10 +148,10 @@ ASafe::~ASafe() {}
 struct UHT_STATICS
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ASafe, TEXT("ASafe"), &Z_Registration_Info_UClass_ASafe, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASafe), 3718146994U) },
+		{ Z_Construct_UClass_ASafe, TEXT("ASafe"), &Z_Registration_Info_UClass_ASafe, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASafe), 3024484511U) },
 	};
 }; // UHT_STATICS 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_mmarasigan2_Documents_Unreal_Projects_Lecture_5882_Lecture8552_Source_Lecture8552_Public_Interactable_Safe_h__Script_Lecture8552_60af7d87b851b8313058ba1f51d02b04d6659f45{
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_mmarasigan2_Documents_Unreal_Projects_Lecture_5882_Lecture8552_Source_Lecture8552_Public_Interactable_Safe_h__Script_Lecture8552_ac78464f7df5a89caaf32d6e49467684b34f3662{
 	TEXT("/Script/Lecture8552"),
 	UHT_STATICS::ClassInfo, UE_ARRAY_COUNT(UHT_STATICS::ClassInfo),
 	nullptr, 0,

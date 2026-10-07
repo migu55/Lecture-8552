@@ -23,7 +23,7 @@ void ALever::Flip()
 	}
 }
 
-void ALever::Interact(UPrimitiveComponent* HitComponent)
+void ALever::Interact(AActor* Interactor, UPrimitiveComponent* HitComponent)
 {
 	Flip();
 }
