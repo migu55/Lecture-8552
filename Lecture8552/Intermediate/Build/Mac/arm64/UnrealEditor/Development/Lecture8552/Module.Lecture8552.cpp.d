@@ -3358,6 +3358,63 @@
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Lecture8552.h \
   Runtime/Core/Public/Modules/ModuleManager.h \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Private/Character/BaseCharacter.cpp \
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Private/Character/PlayerCharacter.cpp \
+  ../Plugins/EnhancedInput/Source/EnhancedInput/Public/EnhancedInputComponent.h \
+  Runtime/Engine/Classes/Components/InputComponent.h \
+  ../Plugins/EnhancedInput/Source/EnhancedInput/Public/InputAction.h \
+  ../Plugins/EnhancedInput/Source/EnhancedInput/Public/InputModifiers.h \
+  ../Plugins/EnhancedInput/Source/EnhancedInput/Public/InputActionValue.h \
+  Runtime/InputCore/Classes/InputCoreTypes.h \
+  ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/InputActionValue.generated.h \
+  ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/InputModifiers.generated.h \
+  ../Plugins/EnhancedInput/Source/EnhancedInput/Public/InputTriggers.h \
+  ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/InputTriggers.generated.h \
+  ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/InputAction.generated.h \
+  ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/EnhancedInputComponent.generated.h \
+  Runtime/Engine/Public/TimerManager.h \
+  Runtime/Engine/Classes/Camera/CameraComponent.h \
+  Runtime/CoreUObject/Public/UObject/ScriptInterface.h \
+  Runtime/Engine/Classes/Components/SceneComponent.h \
+  Runtime/Engine/Classes/Components/StaticMeshComponent.h \
+  Runtime/Engine/Classes/Engine/BlendableInterface.h \
+  Runtime/Engine/Classes/Engine/Scene.h \
+  Runtime/Engine/Classes/Camera/CameraTypes.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/CameraComponent.generated.h \
+  Runtime/Engine/Classes/Engine/Engine.h \
+  Runtime/Engine/Classes/GameFramework/CharacterMovementComponent.h \
+  Runtime/Core/Public/Math/RandomStream.h \
+  Runtime/Engine/Classes/Engine/EngineBaseTypes.h \
+  Runtime/Engine/Public/WorldCollision.h \
+  Runtime/Engine/Classes/AI/Navigation/NavigationTypes.h \
+  Runtime/Engine/Classes/Animation/AnimMontage.h \
+  Runtime/Engine/Classes/AI/Navigation/NavigationAvoidanceTypes.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/NavigationAvoidanceTypes.generated.h \
+  Runtime/Engine/Public/AI/RVOAvoidanceInterface.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/RVOAvoidanceInterface.generated.h \
+  Runtime/Engine/Classes/GameFramework/PawnMovementComponent.h \
+  Runtime/Engine/Classes/GameFramework/NavMovementComponent.h \
+  Runtime/Engine/Classes/GameFramework/NavMovementInterface.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/NavMovementInterface.generated.h \
+  Runtime/Engine/Classes/AI/Navigation/NavAgentInterface.h \
+  Runtime/Engine/Classes/AI/Navigation/PathFollowingAgentInterface.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/PathFollowingAgentInterface.generated.h \
+  Runtime/Engine/Classes/GameFramework/MovementComponent.h \
+  Runtime/PhysicsCore/Public/Chaos/ChaosEngineInterface.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/MovementComponent.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/NavMovementComponent.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/PawnMovementComponent.generated.h \
+  Runtime/Engine/Classes/Interfaces/NetworkPredictionInterface.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/NetworkPredictionInterface.generated.h \
+  Runtime/Engine/Public/CharacterMovementComponentAsync.h \
+  Runtime/Experimental/Chaos/Public/Chaos/SimCallbackObject.h \
+  Runtime/Engine/Public/CollisionQueryParams.h \
+  Runtime/PhysicsCore/Public/CollisionShape.h \
+  Runtime/Engine/Public/Engine/OverlapInfo.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/CharacterMovementComponentAsync.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/CharacterMovementComponent.generated.h \
+  Runtime/Engine/Classes/GameFramework/SpringArmComponent.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/SpringArmComponent.generated.h \
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Private/Components/InventoryComponent.cpp \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Private/Core/Lecture8552GameMode.cpp \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Private/Core/Lecture8552PlayerController.cpp \
   ../Plugins/EnhancedInput/Source/EnhancedInput/Public/EnhancedInputSubsystems.h \
@@ -3366,19 +3423,9 @@
   Runtime/Engine/Classes/GameFramework/PlayerInput.h \
   Runtime/Slate/Public/Framework/Commands/InputChord.h \
   Runtime/Engine/Public/GestureRecognizer.h \
-  Runtime/InputCore/Classes/InputCoreTypes.h \
   Runtime/Engine/Public/InputKeyEventArgs.h \
   Runtime/Engine/Public/KeyState.h \
-  Runtime/Engine/Classes/Engine/EngineBaseTypes.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/PlayerInput.generated.h \
-  ../Plugins/EnhancedInput/Source/EnhancedInput/Public/InputAction.h \
-  ../Plugins/EnhancedInput/Source/EnhancedInput/Public/InputModifiers.h \
-  ../Plugins/EnhancedInput/Source/EnhancedInput/Public/InputActionValue.h \
-  ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/InputActionValue.generated.h \
-  ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/InputModifiers.generated.h \
-  ../Plugins/EnhancedInput/Source/EnhancedInput/Public/InputTriggers.h \
-  ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/InputTriggers.generated.h \
-  ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/InputAction.generated.h \
   Runtime/GameplayTags/Classes/GameplayTagContainer.h \
   Runtime/Core/Public/Misc/ComparisonUtility.h \
   Runtime/Core/Public/Containers/StringFwd.h \
@@ -3403,12 +3450,86 @@
   ../Plugins/EnhancedInput/Source/EnhancedInput/Public/EnhancedActionKeyMapping.h \
   ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/EnhancedActionKeyMapping.generated.h \
   ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/InputMappingContext.generated.h \
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Private/Data/ItemDataAsset.cpp \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Private/Environment/EnergyPond.cpp \
-  Runtime/Engine/Public/TimerManager.h \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Private/Environment/OverlapZone.cpp \
   Runtime/Engine/Classes/Components/BoxComponent.h \
   Runtime/Engine/Classes/Components/ShapeComponent.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/ShapeComponent.generated.h \
   Runtime/Engine/Public/ShowFlags.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/BoxComponent.generated.h \
-  Runtime/Engine/Classes/Engine/Engine.h
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Private/Interactable/Crate.cpp \
+  Runtime/Engine/Classes/Components/SkeletalMeshComponent.h \
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Private/Interactable/Interactable.cpp \
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Private/Interactable/Lever.cpp \
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Private/Interactable/Safe.cpp \
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Private/Interactable/Shrine.cpp \
+  Runtime/Engine/Classes/Components/PointLightComponent.h \
+  Runtime/Engine/Public/PointLightSceneProxyDesc.h \
+  Runtime/Engine/Public/LocalLightSceneProxyDesc.h \
+  Runtime/Engine/Public/LightSceneProxyDesc.h \
+  Runtime/Engine/Public/LightComponentId.h \
+  Runtime/Core/Public/Math/Color.h \
+  Runtime/CoreUObject/Public/UObject/ObjectPtr.h \
+  Runtime/Engine/Classes/Components/LocalLightComponent.h \
+  Runtime/Engine/Classes/Components/LightComponent.h \
+  Runtime/RenderCore/Public/RenderCommandFence.h \
+  Runtime/Engine/Public/EngineDefines.h \
+  Runtime/Engine/Public/SceneTypes.h \
+  Runtime/RenderCore/Public/RenderResource.h \
+  Runtime/Engine/Classes/Components/LightComponentBase.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/LightComponentBase.generated.h \
+  Runtime/Engine/Public/PSOPrecacheFwd.h \
+  Runtime/Engine/Public/PSOPrecacheComponent.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/LightComponent.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/LocalLightComponent.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/PointLightComponent.generated.h \
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Private/UI/ItemSlot.cpp \
+  Runtime/UMG/Public/Components/Image.h \
+  Runtime/Engine/Public/Slate/SlateTextureAtlasInterface.h \
+  Runtime/Engine/Classes/Engine/Texture.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/SlateTextureAtlasInterface.generated.h \
+  Runtime/Engine/Classes/Engine/StreamableManager.h \
+  Runtime/Experimental/IoStore/OnDemandCore/Public/IO/IoStoreOnDemand.h \
+  Runtime/Core/Public/Containers/SharedString.h \
+  Runtime/Core/Public/Experimental/UnifiedError/UnifiedError.h \
+  Runtime/Core/Public/Containers/Utf8String.h \
+  Runtime/Core/Public/Internationalization/Internationalization.h \
+  Runtime/Core/Public/Internationalization/Text.h \
+  Runtime/Core/Public/Logging/StructuredLogFormat.h \
+  Runtime/Core/Public/Templates/FunctionWithContext.h \
+  Runtime/Core/Public/Memory/MemoryFwd.h \
+  Runtime/Core/Public/Memory/MemoryView.h \
+  Runtime/Core/Public/Misc/TVariant.h Runtime/Core/Public/Misc/UEOps.h \
+  Runtime/Core/Public/Serialization/CompactBinaryWriter.h \
+  Runtime/Core/Public/Experimental/UnifiedError/UnifiedErrorDetails.h \
+  Runtime/Core/Public/Concepts/ConvertibleTo.h \
+  Runtime/Core/Public/Logging/StructuredLog.h \
+  Runtime/Experimental/IoStore/OnDemandCore/Public/IO/OnDemandHostGroup.h \
+  Runtime/Core/Public/Containers/AnsiString.h \
+  Runtime/Core/Public/IO/IoStatus.h \
+  Runtime/Experimental/IoStore/OnDemandCore/Public/IO/OnDemandToc.h \
+  Runtime/Core/Public/IO/IoChunkId.h \
+  Runtime/Core/Public/IO/IoContainerId.h Runtime/Core/Public/IO/IoHash.h \
+  Runtime/Core/Public/IO/PackageId.h \
+  Runtime/Core/Public/Features/IModularFeature.h \
+  Runtime/Core/Public/Modules/ModuleInterface.h \
+  Runtime/CoreUObject/Public/Misc/PackageAccessTracking.h \
+  Runtime/CoreUObject/Public/UObject/ObjectHandleDefines.h \
+  Runtime/Core/Public/Misc/SourceLocation.h \
+  Runtime/Core/Public/Misc/SourceLocationUtils.h \
+  Runtime/Core/Public/Misc/StringBuilder.h \
+  Runtime/CoreUObject/Public/Templates/Casts.h \
+  Runtime/CoreUObject/Public/UObject/GCObject.h \
+  Runtime/CoreUObject/Public/UObject/SoftObjectPtr.h \
+  Runtime/Engine/Classes/Engine/Experimental/StreamableManagerError.h \
+  Runtime/CoreUObject/Public/UObject/SoftObjectPath.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/Image.generated.h \
+  Runtime/UMG/Public/Components/TextBlock.h \
+  Runtime/SlateCore/Public/Fonts/SlateFontInfo.h \
+  Runtime/UMG/Public/Components/TextWidgetTypes.h \
+  Runtime/Slate/Public/Framework/Text/TextLayout.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/TextWidgetTypes.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/TextBlock.generated.h \
+  Runtime/Engine/Classes/Engine/Texture2D.h \
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Private/UI/MainHUD.cpp
