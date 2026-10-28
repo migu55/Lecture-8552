@@ -7,6 +7,8 @@
 #include "BaseCharacter.generated.h"
 
 
+class AProjectile;
+
 UCLASS()
 class LECTURE8552_API ABaseCharacter : public ACharacter
 {
@@ -15,6 +17,14 @@ class LECTURE8552_API ABaseCharacter : public ACharacter
 public:
 	// Sets default values for this character's properties
 	ABaseCharacter();
+	
+	UFUNCTION(BlueprintCallable, Category = "Combat")
+	void SpawnProjectile(FName SocketName, TSubclassOf<AProjectile> ProjectileClass);
+	
+	UFUNCTION(BlueprintCallable, Category = "Combat")
+	void LaunchProjectile();
+	
+	
 
 protected:
 	// Called when the game starts or when spawned
@@ -23,5 +33,9 @@ protected:
 public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+	
+private:
+	UPROPERTY();
+	AProjectile* ActiveSpawnedProjectile;
 	
 };

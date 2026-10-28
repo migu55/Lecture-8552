@@ -16,12 +16,19 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AProjectile;
+class UClass;
 
 // ********** Begin Class ABaseCharacter ***********************************************************
+#define FID_mmarasigan2_Documents_Unreal_Projects_Lecture_5882_Lecture8552_Source_Lecture8552_Public_Character_BaseCharacter_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execLaunchProjectile); \
+	DECLARE_FUNCTION(execSpawnProjectile);
+
+
 struct Z_Construct_UClass_ABaseCharacter_Statics;
 LECTURE8552_API UClass* Z_Construct_UClass_ABaseCharacter(ETypeConstructPhase);
 
-#define FID_mmarasigan2_Documents_Unreal_Projects_Lecture_5882_Lecture8552_Source_Lecture8552_Public_Character_BaseCharacter_h_13_INCLASS_NO_PURE_DECLS \
+#define FID_mmarasigan2_Documents_Unreal_Projects_Lecture_5882_Lecture8552_Source_Lecture8552_Public_Character_BaseCharacter_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	friend struct ::Z_Construct_UClass_ABaseCharacter_Statics; \
 	friend LECTURE8552_API UClass* ::Z_Construct_UClass_ABaseCharacter(ETypeConstructPhase); \
@@ -30,7 +37,7 @@ public: \
 	DECLARE_SERIALIZER(ABaseCharacter)
 
 
-#define FID_mmarasigan2_Documents_Unreal_Projects_Lecture_5882_Lecture8552_Source_Lecture8552_Public_Character_BaseCharacter_h_13_ENHANCED_CONSTRUCTORS \
+#define FID_mmarasigan2_Documents_Unreal_Projects_Lecture_5882_Lecture8552_Source_Lecture8552_Public_Character_BaseCharacter_h_15_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	ABaseCharacter(ABaseCharacter&&) = delete; \
 	ABaseCharacter(const ABaseCharacter&) = delete; \
@@ -40,12 +47,13 @@ public: \
 	NO_API virtual ~ABaseCharacter();
 
 
-#define FID_mmarasigan2_Documents_Unreal_Projects_Lecture_5882_Lecture8552_Source_Lecture8552_Public_Character_BaseCharacter_h_10_PROLOG
-#define FID_mmarasigan2_Documents_Unreal_Projects_Lecture_5882_Lecture8552_Source_Lecture8552_Public_Character_BaseCharacter_h_13_GENERATED_BODY \
+#define FID_mmarasigan2_Documents_Unreal_Projects_Lecture_5882_Lecture8552_Source_Lecture8552_Public_Character_BaseCharacter_h_12_PROLOG
+#define FID_mmarasigan2_Documents_Unreal_Projects_Lecture_5882_Lecture8552_Source_Lecture8552_Public_Character_BaseCharacter_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_mmarasigan2_Documents_Unreal_Projects_Lecture_5882_Lecture8552_Source_Lecture8552_Public_Character_BaseCharacter_h_13_INCLASS_NO_PURE_DECLS \
-	FID_mmarasigan2_Documents_Unreal_Projects_Lecture_5882_Lecture8552_Source_Lecture8552_Public_Character_BaseCharacter_h_13_ENHANCED_CONSTRUCTORS \
+	FID_mmarasigan2_Documents_Unreal_Projects_Lecture_5882_Lecture8552_Source_Lecture8552_Public_Character_BaseCharacter_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_mmarasigan2_Documents_Unreal_Projects_Lecture_5882_Lecture8552_Source_Lecture8552_Public_Character_BaseCharacter_h_15_INCLASS_NO_PURE_DECLS \
+	FID_mmarasigan2_Documents_Unreal_Projects_Lecture_5882_Lecture8552_Source_Lecture8552_Public_Character_BaseCharacter_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
