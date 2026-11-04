@@ -63,10 +63,12 @@ void AProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimi
 				IgnoreActors.Add(GetOwner());
 			}
 			
+			FVector ExplosionOrigin = Hit.ImpactPoint + (Hit.ImpactNormal * 20.0f);
+			
 			UGameplayStatics::ApplyRadialDamage(
 				GetWorld(),
 				BaseDamage,
-				Hit.ImpactPoint,
+				ExplosionOrigin,
 				1500.0f,
 				UDamageType::StaticClass(),
 				IgnoreActors,

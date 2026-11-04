@@ -261,6 +261,9 @@ void APlayerCharacter::OnJumpCancelled()
 
 void APlayerCharacter::OnJumpCompleted()
 {
+	
+	if (Energy <= 0.0f) return;
+	
 	GetCharacterMovement()->SetMovementMode(MOVE_Flying);
 	
 	bUseControllerRotationPitch = true;
