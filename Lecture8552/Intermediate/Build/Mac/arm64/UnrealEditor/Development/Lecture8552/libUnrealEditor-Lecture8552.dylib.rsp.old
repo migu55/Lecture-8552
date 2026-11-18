@@ -36,6 +36,5 @@
 -framework "Contacts"
 -install_name "@rpath/libUnrealEditor-Lecture8552.dylib"
 "/Users/mmarasigan2/Documents/Unreal Projects/Lecture 5882/Lecture8552/Intermediate/Build/Mac/arm64/UnrealEditor/Development/Lecture8552/Module.Lecture8552.cpp.o"
-"/Users/mmarasigan2/Documents/Unreal Projects/Lecture 5882/Lecture8552/Intermediate/Build/Mac/arm64/UnrealEditor/Development/Lecture8552/PlayerCharacter.cpp.o"
-"/Users/mmarasigan2/Documents/Unreal Projects/Lecture 5882/Lecture8552/Intermediate/Build/Mac/arm64/UnrealEditor/Development/Lecture8552/Projectile.cpp.o"
+"/Users/mmarasigan2/Documents/Unreal Projects/Lecture 5882/Lecture8552/Intermediate/Build/Mac/arm64/UnrealEditor/Development/Lecture8552/NPCAIController.cpp.o"
 -o "/Users/mmarasigan2/Documents/Unreal Projects/Lecture 5882/Lecture8552/Binaries/Mac/libUnrealEditor-Lecture8552.dylib"
