@@ -230,6 +230,66 @@ DEFINE_FUNCTION(UInventoryComponent::execGetQuantity)
 }
 // ********** End Class UInventoryComponent Function GetQuantity ***********************************
 
+// ********** Begin Class UInventoryComponent Function LoadItems ***********************************
+#ifdef UHT_STATICS
+#error UHT_STATICS already defined
+#endif
+#define UHT_STATICS Z_Construct_UFunction_UInventoryComponent_LoadItems_Statics
+struct UHT_STATICS
+{
+	struct InventoryComponent_eventLoadItems_Parms
+	{
+		TArray<UItemDataAsset*> SavedItems;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Type_MetaData[] = {
+		{ "Category", "Inventory" },
+		{ "ModuleRelativePath", "Public/Components/InventoryComponent.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SavedItems_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+
+// ********** Begin Function LoadItems constinit property declarations *****************************
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_SavedItems_Inner;
+	static const UECodeGen_Private::FArrayPropertyParams NewProp_SavedItems;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function LoadItems constinit property declarations *******************************
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+
+// ********** Begin Function LoadItems Property Definitions ****************************************
+const UECodeGen_Private::FObjectPropertyParams UHT_STATICS::NewProp_SavedItems_Inner = { "SavedItems", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Object, nullptr, nullptr, 1, 0, Z_Construct_UClass_UItemDataAsset, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FArrayPropertyParams UHT_STATICS::NewProp_SavedItems = { "SavedItems", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, nullptr, nullptr, 1, STRUCT_OFFSET(InventoryComponent_eventLoadItems_Parms, SavedItems), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SavedItems_MetaData), NewProp_SavedItems_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const UHT_STATICS::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_SavedItems_Inner,
+	(const UECodeGen_Private::FPropertyParamsBase*)&UHT_STATICS::NewProp_SavedItems,
+};
+static_assert(UE_ARRAY_COUNT(UHT_STATICS::PropPointers) < 2048);
+// ********** End Function LoadItems Property Definitions ******************************************
+const UECodeGen_Private::FFunctionParams UHT_STATICS::FuncParams = { { (FTypeConstructFunc*)Z_Construct_UClass_UInventoryComponent, nullptr, "LoadItems", UHT_STATICS::PropPointers, UE_ARRAY_COUNT(UHT_STATICS::PropPointers), DataSizeOf<UHT_STATICS::InventoryComponent_eventLoadItems_Parms>(), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(UHT_STATICS::Type_MetaData), UHT_STATICS::Type_MetaData)},  };
+static_assert(sizeof(UHT_STATICS::InventoryComponent_eventLoadItems_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UInventoryComponent_LoadItems(ETypeConstructPhase Phase)
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, UHT_STATICS::FuncParams);
+	}
+	return ReturnFunction;
+}
+#undef UHT_STATICS
+DEFINE_FUNCTION(UInventoryComponent::execLoadItems)
+{
+	P_GET_TARRAY_REF(UItemDataAsset*,Z_Param_Out_SavedItems);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->LoadItems(Z_Param_Out_SavedItems);
+	P_NATIVE_END;
+}
+// ********** End Class UInventoryComponent Function LoadItems *************************************
+
 // ********** Begin Class UInventoryComponent Function RemoveItem **********************************
 #ifdef UHT_STATICS
 #error UHT_STATICS already defined
@@ -331,6 +391,7 @@ struct UHT_STATICS
 		{ .NameUTF8 = UTF8TEXT("AddItem"), .Pointer = &UInventoryComponent::execAddItem },
 		{ .NameUTF8 = UTF8TEXT("GetItems"), .Pointer = &UInventoryComponent::execGetItems },
 		{ .NameUTF8 = UTF8TEXT("GetQuantity"), .Pointer = &UInventoryComponent::execGetQuantity },
+		{ .NameUTF8 = UTF8TEXT("LoadItems"), .Pointer = &UInventoryComponent::execLoadItems },
 		{ .NameUTF8 = UTF8TEXT("RemoveItem"), .Pointer = &UInventoryComponent::execRemoveItem },
 	};
 	static FTypeConstructFunc* DependentSingletons[];
@@ -338,6 +399,7 @@ struct UHT_STATICS
 		{ &Z_Construct_UFunction_UInventoryComponent_AddItem, "AddItem" }, // 9a5a36724fe792bfd0e8c3a11515495bf8087211
 		{ &Z_Construct_UFunction_UInventoryComponent_GetItems, "GetItems" }, // 7f99f1de4cfa7c8eead00ac3a838dbc1d1e96e35
 		{ &Z_Construct_UFunction_UInventoryComponent_GetQuantity, "GetQuantity" }, // 06a046a6537462e462b3b7fdfaf99cc3edb1c555
+		{ &Z_Construct_UFunction_UInventoryComponent_LoadItems, "LoadItems" }, // a61ee8456c2d37d8be72f0509877eab975ed5905
 		{ &Z_Construct_UFunction_UInventoryComponent_RemoveItem, "RemoveItem" }, // 8381d46219ab3bb4975ac99da71e64445392b020
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
@@ -431,10 +493,10 @@ UInventoryComponent::~UInventoryComponent() {}
 struct UHT_STATICS
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UInventoryComponent, TEXT("UInventoryComponent"), &Z_Registration_Info_UClass_UInventoryComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UInventoryComponent), 4187825907U) },
+		{ Z_Construct_UClass_UInventoryComponent, TEXT("UInventoryComponent"), &Z_Registration_Info_UClass_UInventoryComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UInventoryComponent), 2210514521U) },
 	};
 }; // UHT_STATICS 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_mmarasigan2_Documents_Unreal_Projects_Lecture_5882_Lecture8552_Source_Lecture8552_Public_Components_InventoryComponent_h__Script_Lecture8552_d6ac791963cdc2b805dfe34cb4c2a59c9f9dc20c{
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_mmarasigan2_Documents_Unreal_Projects_Lecture_5882_Lecture8552_Source_Lecture8552_Public_Components_InventoryComponent_h__Script_Lecture8552_ce50fd4f990b92aa963e43d78d2cae46034fa39b{
 	TEXT("/Script/Lecture8552"),
 	UHT_STATICS::ClassInfo, UE_ARRAY_COUNT(UHT_STATICS::ClassInfo),
 	nullptr, 0,

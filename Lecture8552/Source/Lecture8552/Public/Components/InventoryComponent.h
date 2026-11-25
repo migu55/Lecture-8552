@@ -44,6 +44,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Inventory")
 	bool RemoveItem(UItemDataAsset* Item);
 	
+	UFUNCTION(BlueprintCallable, Category = "Inventory")
+	void LoadItems(const TArray<UItemDataAsset*>& SavedItems);
+	
 	UFUNCTION(BlueprintPure, Category = "Inventory")
 	int32 GetQuantity(UItemDataAsset* TargetItem) const;
 	

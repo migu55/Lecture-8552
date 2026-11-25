@@ -22,6 +22,7 @@ class UItemDataAsset;
 #define FID_mmarasigan2_Documents_Unreal_Projects_Lecture_5882_Lecture8552_Source_Lecture8552_Public_Components_InventoryComponent_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execGetItems); \
 	DECLARE_FUNCTION(execGetQuantity); \
+	DECLARE_FUNCTION(execLoadItems); \
 	DECLARE_FUNCTION(execRemoveItem); \
 	DECLARE_FUNCTION(execAddItem);
 

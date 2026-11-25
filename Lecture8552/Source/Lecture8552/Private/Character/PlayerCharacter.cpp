@@ -7,7 +7,9 @@
 #include "TimerManager.h"
 #include "Camera/CameraComponent.h"
 #include "Components/InventoryComponent.h"
+#include "Core/Lecture8552GameInstance.h"
 #include "Core/Lecture8552PlayerController.h"
+#include "Core/Lecture8552SaveGame.h"
 #include "Data/ItemDataAsset.h"
 #include "Engine/Engine.h"
 #include "GameFramework/CharacterMovementComponent.h"
@@ -97,6 +99,40 @@ void APlayerCharacter::RemoveEnergy(float Amount)
 void APlayerCharacter::BeginPlay()
 {
 	Super::BeginPlay();
+	
+	ApplySavedPlayerData();
+	
+}
+
+void APlayerCharacter::ApplySavedPlayerData()
+{
+	ULecture8552GameInstance* GI = Cast<ULecture8552GameInstance>(GetGameInstance());
+	if (!GetWorld() || !GI || !GI->SaveData) return;
+	
+	const FPlayerSaveData& PlayerData = GI->SaveData->PlayerSaveData;
+	
+	if (PlayerData.PlayerTransform.Equals(FTransform::Identity))
+	{
+		return;
+	}
+	
+	SetActorTransform(PlayerData.PlayerTransform, false, nullptr, ETeleportType::None);
+	
+	//update player rotation
+	if (AController* PlayerController = GetController())
+	{
+		PlayerController->SetControlRotation(PlayerData.PlayerRotation);
+	}
+	
+	//update energy
+	Energy = PlayerData.Energy;
+	OnEnergyChanged.Broadcast(Energy, MaxEnergy);
+	
+	//update inventory
+	if (InventoryComponent)
+	{
+		InventoryComponent->LoadItems(PlayerData.Items);
+	}
 	
 }
 
@@ -315,6 +351,8 @@ void APlayerCharacter::UsePotion()
 		}
 	}
 }
+
+
 
 
 

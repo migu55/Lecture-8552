@@ -3349,6 +3349,15 @@
   ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/UserWidget.generated.h \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT/ItemSlot.generated.h \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT/Lecture8552.init.gen.cpp \
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT/Lecture8552GameInstance.gen.cpp \
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Public/Core/Lecture8552GameInstance.h \
+  Runtime/Engine/Classes/Engine/GameInstance.h \
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT/Lecture8552GameInstance.generated.h \
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Public/Core/Lecture8552SaveGame.h \
+  Runtime/Engine/Classes/GameFramework/SaveGame.h \
+  Runtime/Core/Public/Misc/CoreMiscDefines.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/SaveGame.generated.h \
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT/Lecture8552SaveGame.generated.h \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT/Lecture8552GameMode.gen.cpp \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Public/Core/Lecture8552GameMode.h \
   Runtime/Engine/Classes/GameFramework/GameModeBase.h \
@@ -3362,6 +3371,7 @@
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT/Lecture8552PlayerController.gen.cpp \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Public/Core/Lecture8552PlayerController.h \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT/Lecture8552PlayerController.generated.h \
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT/Lecture8552SaveGame.gen.cpp \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT/Lever.gen.cpp \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Public/Interactable/Lever.h \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT/Lever.generated.h \
@@ -3373,6 +3383,9 @@
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT/NPCAIController.generated.h \
   Runtime/AIModule/Classes/Perception/AIPerceptionTypes.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/AIPerceptionTypes.generated.h \
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT/NPCCharacter.gen.cpp \
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Public/Character/NPCCharacter.h \
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT/NPCCharacter.generated.h \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT/OverlapZone.gen.cpp \
   Runtime/Engine/Classes/Engine/HitResult.h \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT/PlayerCharacter.gen.cpp \
@@ -3394,6 +3407,245 @@
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Lecture8552.cpp \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Lecture8552.h \
   Runtime/Core/Public/Modules/ModuleManager.h \
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Private/AI/BaseAIController.cpp \
+  Runtime/NavigationSystem/Public/NavigationSystem.h \
+  Runtime/Core/Public/Misc/CoreMisc.h \
+  Runtime/Core/Public/Misc/CoreDelegates.h \
+  Runtime/Engine/Classes/AI/Navigation/NavigationDirtyElement.h \
+  Runtime/Core/Public/Math/Box.h \
+  Runtime/Engine/Classes/AI/Navigation/NavigationInvokerPriority.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/NavigationInvokerPriority.generated.h \
+  Runtime/NavigationSystem/Public/NavigationData.h \
+  Runtime/Core/Public/Async/TaskGraphInterfaces.h \
+  Runtime/Engine/Classes/AI/Navigation/NavigationDataInterface.h \
+  Runtime/Engine/Public/AI/Navigation/NavQueryFilter.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/NavigationDataInterface.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/NavigationSystem/UHT/NavigationData.generated.h \
+  Runtime/Engine/Classes/AI/NavigationSystemBase.h \
+  Runtime/Engine/Public/AI/NavigationModifier.h \
+  Runtime/Engine/Classes/AI/Navigation/NavLinkDefinition.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/NavLinkDefinition.generated.h \
+  Runtime/Engine/Classes/AI/Navigation/NavigationDataResolution.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/NavigationDataResolution.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/NavigationSystemBase.generated.h \
+  Runtime/NavigationSystem/Public/NavigationOctree.h \
+  Runtime/Core/Public/Math/GenericOctreePublic.h \
+  Runtime/Engine/Classes/AI/Navigation/NavigationElement.h \
+  Runtime/Core/Public/Math/Transform.h \
+  Runtime/Engine/Classes/AI/Navigation/NavigationRelevantData.h \
+  Runtime/Engine/Classes/AI/Navigation/NavigationDirtyArea.h \
+  Runtime/Core/Public/Math/GenericOctree.h \
+  Runtime/Core/Public/HAL/LowLevelMemTracker.h \
+  Runtime/Engine/Classes/AI/NavigationSystemConfig.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/NavigationSystemConfig.generated.h \
+  Runtime/NavigationSystem/Public/NavigationOctreeController.h \
+  Runtime/NavigationSystem/Public/NavigationDirtyAreasController.h \
+  Runtime/Core/Public/Logging/LogMacros.h \
+  Runtime/Core/Public/UObject/UnrealNames.h \
+  Runtime/Core/Public/Math/MovingWindowAverageFast.h \
+  Runtime/Engine/Classes/AI/Navigation/NavigationBounds.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/NavigationSystem/UHT/NavigationSystem.generated.h \
+  Runtime/TypedElementFramework/Public/Elements/Framework/TypedElementSorter.h \
+  Runtime/TypedElementFramework/Public/DataStorage/Handles.h \
+  Runtime/Core/Public/Containers/StringFwd.h \
+  Runtime/Core/Public/Internationalization/Text.h \
+  Runtime/TypedElementFramework/Public/Elements/Framework/TypedElementSorter.inl \
+  Runtime/Core/Public/Misc/Char.h \
+  Runtime/TypedElementFramework/Public/Elements/Interfaces/TypedElementDataStorageInterface.h \
+  Runtime/TypedElementFramework/Public/DataStorage/CommonTypes.h \
+  Runtime/TypedElementFramework/Public/DataStorage/MapKey.h \
+  Runtime/Core/Public/Misc/TVariant.h \
+  Runtime/CoreUObject/Public/UObject/SoftObjectPath.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/TypedElementFramework/UHT/CommonTypes.generated.h \
+  Runtime/TypedElementFramework/Public/DataStorage/Scope/EditorDataScopeTypes.h \
+  Runtime/TypedElementFramework/Public/DataStorage/Queries/Description.h \
+  Runtime/TypedElementFramework/Public/DataStorage/Queries/Types.h \
+  Runtime/TypedElementFramework/Public/DataStorage/Queries/Conditions.h \
+  Runtime/TypedElementFramework/Public/Elements/Interfaces/TypedElementQueryStorageInterfaces.h \
+  Runtime/TypedElementFramework/Public/Elements/Framework/TypedElementQueryCapabilities.h \
+  Runtime/Core/Public/Concepts/SameAs.h \
+  Runtime/TypedElementFramework/Public/Elements/Framework/TypedElementQueryFunctionArgumentTypes.h \
+  Runtime/TypedElementFramework/Public/Elements/Framework/TypedElementRowHandleArrayView.h \
+  Runtime/TypedElementFramework/Public/Elements/Framework/TypedElementQueryCapabilities.inl \
+  Runtime/TypedElementFramework/Public/Elements/Framework/TypedElementMetaData.h \
+  Runtime/Core/Public/Templates/Tuple.h \
+  Runtime/TypedElementFramework/Public/Elements/Framework/TypedElementMetaData.inl \
+  Runtime/TypedElementFramework/Public/Elements/Framework/TypedElementColumnUtils.h \
+  Runtime/TypedElementFramework/Public/Elements/Framework/TypedElementQueryFunctions.h \
+  Runtime/TypedElementFramework/Public/Elements/Framework/TypedElementQueryFunctions.inl \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/functional \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binary_negate.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/bind.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binder1st.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binder2nd.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/mem_fn.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/mem_fun_ref.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/pointer_to_binary_function.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/pointer_to_unary_function.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/unary_negate.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/function.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/strip_signature.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/boyer_moore_searcher.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/is_transparent.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__hash_table \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/swap_allocator.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/scope_guard.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/try_key_extraction.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_const_ref.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/erase_if_container.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/ranges_iterator_traits.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory_resource/polymorphic_allocator.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory_resource/memory_resource.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__node_handle \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/container_compatible_range.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/from_range.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/container_traits.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_allocator.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/default_searcher.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/not_fn.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/perfect_forward.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/bind_back.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/bind_front.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/vector \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__vector/comparison.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/vector.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__vector/swap.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__vector/vector.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__debug_utils/sanitizers.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/enable_insertable.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/allocate_at_least.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/noexcept_move_assign_container.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/temp_value.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/as_rvalue_view.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/all.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/compose.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/owning_view.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/range_adaptor.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/ref_view.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__split_buffer \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__vector/container_traits.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__vector/vector_bool.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit_reference \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__vector/pmr.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__vector/erase.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cerrno \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/clocale \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/locale.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_locale.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_locale_posix2008.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_types/_locale_t.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/locale \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/locale_base_api.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/support/apple.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/support/bsd_like.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_xlocale.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/__xlocale.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_mb_cur_max.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale/_ctype.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale/___wctype.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale/_stdio.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale/_stdlib.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale/_string.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale/_time.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale/_wchar.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stddef.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale/_wctype.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/once_flag.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/no_destroy.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/string \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__string/extern_template_lists.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/default_three_way_comparator.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/string_view \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/string_view.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/messages.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/nl_types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_types/_nl_item.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/money.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/check_grouping.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/ios \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__ios/fpos.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_category.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_code.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/errc.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_condition.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/system_error.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__condition_variable/condition_variable.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/mutex.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/unique_lock.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/tag_types.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/throw_system_error.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__mutex/lock_guard.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/id.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/system_error \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/get_c_locale.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/pad_and_output.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/num.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/to_chars_integral.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/tables.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/to_chars_base_10.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/to_chars_result.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/traits.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/make_32_64_or_128_bit.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/scan_keyword.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/streambuf \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/time.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/wbuffer_convert.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__locale_dir/wstring_convert.h \
+  Runtime/TypedElementFramework/Public/Elements/Framework/TypedElementQueryCapabilityForwarder.h \
+  Runtime/TypedElementFramework/Public/Elements/Framework/TypedElementQueryContract.h \
+  Runtime/TypedElementFramework/Public/Elements/Framework/TypedElementQueryFunctionArguments.h \
+  Runtime/TypedElementFramework/Public/Elements/Framework/TypedElementQueryFunctionArguments.inl \
+  Runtime/TypedElementFramework/Public/Elements/Framework/TypedElementRowHandleArray.h \
+  Runtime/Core/Public/Features/IModularFeature.h \
+  Runtime/Core/Public/Misc/Timespan.h \
+  Runtime/Engine/Classes/Kismet/GameplayStatics.h \
+  Runtime/Engine/Public/CollisionQueryParams.h \
+  Runtime/Engine/Classes/Engine/LatentActionManager.h \
+  Runtime/Engine/Classes/Kismet/KismetSystemLibrary.h \
+  Runtime/CoreUObject/Public/UObject/UnrealType.h \
+  Runtime/CoreUObject/Public/UObject/SoftObjectPtr.h \
+  Runtime/CoreUObject/Public/UObject/PropertyAccessUtil.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/CoreUObject/UHT/PropertyAccessUtil.generated.h \
+  Runtime/CoreUObject/Public/UObject/TopLevelAssetPath.h \
+  Runtime/Engine/Classes/Engine/CollisionProfile.h \
+  Runtime/CoreUObject/Public/AssetRegistry/ARFilter.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/KismetSystemLibrary.generated.h \
+  Runtime/Engine/Classes/Sound/DialogueTypes.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/DialogueTypes.generated.h \
+  Runtime/Engine/Classes/Kismet/GameplayStaticsTypes.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/GameplayStaticsTypes.generated.h \
+  Runtime/Engine/Classes/Particles/WorldPSCPool.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/GameplayStatics.generated.h \
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Private/AI/NPCAIController.cpp \
+  Runtime/AIModule/Classes/BehaviorTree/BlackboardComponent.h \
+  Runtime/InputCore/Classes/InputCoreTypes.h \
+  Runtime/AIModule/Classes/BehaviorTree/Blackboard/BlackboardKeyType.h \
+  Runtime/AIModule/Classes/BehaviorTree/BehaviorTreeTypes.h \
+  Runtime/AIModule/Classes/BehaviorTree/Blackboard/BlackboardKey.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/BehaviorTreeTypes.generated.h \
+  Runtime/AIModule/Classes/BehaviorTree/Blackboard/BlackboardKeyEnums.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/BlackboardKeyEnums.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/BlackboardKeyType.generated.h \
+  Runtime/AIModule/Classes/AISystem.h \
+  Runtime/Engine/Classes/AI/AISystemBase.h \
+  Runtime/Engine/Classes/Engine/EngineBaseTypes.h \
+  Runtime/Core/Public/Modules/ModuleInterface.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/AISystemBase.generated.h \
+  Runtime/Core/Public/Math/RandomStream.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/AISystem.generated.h \
+  Runtime/AIModule/Classes/BehaviorTree/BlackboardData.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/BlackboardData.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/BlackboardComponent.generated.h \
+  Runtime/AIModule/Classes/Perception/AISense_Sight.h \
+  Runtime/Engine/Public/WorldCollision.h \
+  Runtime/Core/Public/Misc/MTTransactionallySafeAccessDetector.h \
+  Runtime/AIModule/Classes/Perception/AISense.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/AISense.generated.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/AIModule/UHT/AISense_Sight.generated.h \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Private/Character/BaseCharacter.cpp \
   Runtime/Engine/Classes/Components/SkeletalMeshComponent.h \
   Runtime/Engine/Classes/GameFramework/ProjectileMovementComponent.h \
@@ -3402,60 +3654,7 @@
   Runtime/Engine/Classes/Components/SceneComponent.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/MovementComponent.generated.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/ProjectileMovementComponent.generated.h \
-  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Private/Character/PlayerCharacter.cpp \
-  ../Plugins/EnhancedInput/Source/EnhancedInput/Public/EnhancedInputComponent.h \
-  Runtime/Engine/Classes/Components/InputComponent.h \
-  ../Plugins/EnhancedInput/Source/EnhancedInput/Public/InputAction.h \
-  ../Plugins/EnhancedInput/Source/EnhancedInput/Public/InputModifiers.h \
-  ../Plugins/EnhancedInput/Source/EnhancedInput/Public/InputActionValue.h \
-  Runtime/InputCore/Classes/InputCoreTypes.h \
-  ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/InputActionValue.generated.h \
-  ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/InputModifiers.generated.h \
-  ../Plugins/EnhancedInput/Source/EnhancedInput/Public/InputTriggers.h \
-  ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/InputTriggers.generated.h \
-  ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/InputAction.generated.h \
-  ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/EnhancedInputComponent.generated.h \
-  Runtime/Engine/Public/TimerManager.h \
-  Runtime/Engine/Classes/Camera/CameraComponent.h \
-  Runtime/CoreUObject/Public/UObject/ScriptInterface.h \
-  Runtime/Engine/Classes/Components/StaticMeshComponent.h \
-  Runtime/Engine/Classes/Engine/BlendableInterface.h \
-  Runtime/Engine/Classes/Engine/Scene.h \
-  Runtime/Engine/Classes/Camera/CameraTypes.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/CameraComponent.generated.h \
-  Runtime/Engine/Classes/Engine/Engine.h \
-  Runtime/Engine/Classes/GameFramework/CharacterMovementComponent.h \
-  Runtime/Core/Public/Math/RandomStream.h \
-  Runtime/Engine/Classes/Engine/EngineBaseTypes.h \
-  Runtime/Engine/Public/WorldCollision.h \
-  Runtime/Engine/Classes/Animation/AnimMontage.h \
-  Runtime/Engine/Classes/AI/Navigation/NavigationAvoidanceTypes.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/NavigationAvoidanceTypes.generated.h \
-  Runtime/Engine/Public/AI/RVOAvoidanceInterface.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/RVOAvoidanceInterface.generated.h \
-  Runtime/Engine/Classes/GameFramework/PawnMovementComponent.h \
-  Runtime/Engine/Classes/GameFramework/NavMovementComponent.h \
-  Runtime/Engine/Classes/GameFramework/NavMovementInterface.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/NavMovementInterface.generated.h \
-  Runtime/Engine/Classes/AI/Navigation/NavAgentInterface.h \
-  Runtime/Engine/Classes/AI/Navigation/PathFollowingAgentInterface.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/PathFollowingAgentInterface.generated.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/NavMovementComponent.generated.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/PawnMovementComponent.generated.h \
-  Runtime/Engine/Classes/Interfaces/NetworkPredictionInterface.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/NetworkPredictionInterface.generated.h \
-  Runtime/Engine/Public/CharacterMovementComponentAsync.h \
-  Runtime/Experimental/Chaos/Public/Chaos/SimCallbackObject.h \
-  Runtime/Engine/Public/CollisionQueryParams.h \
-  Runtime/PhysicsCore/Public/CollisionShape.h \
-  Runtime/Engine/Public/Engine/OverlapInfo.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/CharacterMovementComponentAsync.generated.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/CharacterMovementComponent.generated.h \
-  Runtime/Engine/Classes/GameFramework/SpringArmComponent.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/SpringArmComponent.generated.h \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Private/Components/HealthComponent.cpp \
-  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Private/Components/InventoryComponent.cpp \
-  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Private/Core/Lecture8552GameMode.cpp \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Private/Core/Lecture8552PlayerController.cpp \
   ../Plugins/EnhancedInput/Source/EnhancedInput/Public/EnhancedInputSubsystems.h \
   ../Plugins/EnhancedInput/Source/EnhancedInput/Public/EnhancedInputSubsystemInterface.h \
@@ -3466,9 +3665,16 @@
   Runtime/Engine/Public/InputKeyEventArgs.h \
   Runtime/Engine/Public/KeyState.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/PlayerInput.generated.h \
+  ../Plugins/EnhancedInput/Source/EnhancedInput/Public/InputAction.h \
+  ../Plugins/EnhancedInput/Source/EnhancedInput/Public/InputModifiers.h \
+  ../Plugins/EnhancedInput/Source/EnhancedInput/Public/InputActionValue.h \
+  ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/InputActionValue.generated.h \
+  ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/InputModifiers.generated.h \
+  ../Plugins/EnhancedInput/Source/EnhancedInput/Public/InputTriggers.h \
+  ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/InputTriggers.generated.h \
+  ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/InputAction.generated.h \
   Runtime/GameplayTags/Classes/GameplayTagContainer.h \
   Runtime/Core/Public/Misc/ComparisonUtility.h \
-  Runtime/Core/Public/Containers/StringFwd.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/GameplayTags/UHT/GameplayTagContainer.generated.h \
   Runtime/GameplayTags/Public/NativeGameplayTags.h \
   Runtime/Core/Public/Containers/Set.h \
@@ -3492,13 +3698,16 @@
   ../Plugins/EnhancedInput/Intermediate/Build/Mac/UnrealEditor/Inc/EnhancedInput/UHT/InputMappingContext.generated.h \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Private/Data/ItemDataAsset.cpp \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Private/Environment/EnergyPond.cpp \
+  Runtime/Engine/Public/TimerManager.h \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Private/Environment/OverlapZone.cpp \
   Runtime/Engine/Classes/Components/BoxComponent.h \
   Runtime/Engine/Classes/Components/ShapeComponent.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/ShapeComponent.generated.h \
   Runtime/Engine/Public/ShowFlags.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/BoxComponent.generated.h \
+  Runtime/Engine/Classes/Engine/Engine.h \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Private/Interactable/Crate.cpp \
+  Runtime/Engine/Classes/Components/StaticMeshComponent.h \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Private/Interactable/Interactable.cpp \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Private/Interactable/Lever.cpp \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Private/Interactable/Safe.cpp \
@@ -3526,26 +3735,10 @@
   Runtime/Engine/Classes/Components/SphereComponent.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/SphereComponent.generated.h \
   Runtime/Engine/Classes/GameFramework/DamageType.h \
-  Runtime/Engine/Classes/Kismet/GameplayStatics.h \
-  Runtime/Engine/Classes/Engine/LatentActionManager.h \
-  Runtime/Engine/Classes/Kismet/KismetSystemLibrary.h \
-  Runtime/CoreUObject/Public/UObject/UnrealType.h \
-  Runtime/CoreUObject/Public/UObject/SoftObjectPtr.h \
-  Runtime/CoreUObject/Public/UObject/PropertyAccessUtil.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/CoreUObject/UHT/PropertyAccessUtil.generated.h \
-  Runtime/CoreUObject/Public/UObject/TopLevelAssetPath.h \
-  Runtime/Engine/Classes/Engine/CollisionProfile.h \
-  Runtime/CoreUObject/Public/AssetRegistry/ARFilter.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/KismetSystemLibrary.generated.h \
-  Runtime/Engine/Classes/Sound/DialogueTypes.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/DialogueTypes.generated.h \
-  Runtime/Engine/Classes/Kismet/GameplayStaticsTypes.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/GameplayStaticsTypes.generated.h \
-  Runtime/Engine/Classes/Particles/WorldPSCPool.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/GameplayStatics.generated.h \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Private/Projectile/SpawnProjectile.cpp \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Private/UI/ItemSlot.cpp \
   Runtime/UMG/Public/Components/Image.h \
+  Runtime/CoreUObject/Public/UObject/ScriptInterface.h \
   Runtime/Engine/Public/Slate/SlateTextureAtlasInterface.h \
   Runtime/Engine/Classes/Engine/Texture.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/SlateTextureAtlasInterface.generated.h \
@@ -3555,12 +3748,11 @@
   Runtime/Core/Public/Experimental/UnifiedError/UnifiedError.h \
   Runtime/Core/Public/Containers/Utf8String.h \
   Runtime/Core/Public/Internationalization/Internationalization.h \
-  Runtime/Core/Public/Internationalization/Text.h \
   Runtime/Core/Public/Logging/StructuredLogFormat.h \
   Runtime/Core/Public/Templates/FunctionWithContext.h \
   Runtime/Core/Public/Memory/MemoryFwd.h \
   Runtime/Core/Public/Memory/MemoryView.h \
-  Runtime/Core/Public/Misc/TVariant.h Runtime/Core/Public/Misc/UEOps.h \
+  Runtime/Core/Public/Misc/UEOps.h \
   Runtime/Core/Public/Serialization/CompactBinaryWriter.h \
   Runtime/Core/Public/Experimental/UnifiedError/UnifiedErrorDetails.h \
   Runtime/Core/Public/Concepts/ConvertibleTo.h \
@@ -3572,8 +3764,6 @@
   Runtime/Core/Public/IO/IoChunkId.h \
   Runtime/Core/Public/IO/IoContainerId.h Runtime/Core/Public/IO/IoHash.h \
   Runtime/Core/Public/IO/PackageId.h \
-  Runtime/Core/Public/Features/IModularFeature.h \
-  Runtime/Core/Public/Modules/ModuleInterface.h \
   Runtime/CoreUObject/Public/Misc/PackageAccessTracking.h \
   Runtime/CoreUObject/Public/UObject/ObjectHandleDefines.h \
   Runtime/Core/Public/Misc/SourceLocation.h \
@@ -3582,7 +3772,6 @@
   Runtime/CoreUObject/Public/Templates/Casts.h \
   Runtime/CoreUObject/Public/UObject/GCObject.h \
   Runtime/Engine/Classes/Engine/Experimental/StreamableManagerError.h \
-  Runtime/CoreUObject/Public/UObject/SoftObjectPath.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/UMG/UHT/Image.generated.h \
   Runtime/UMG/Public/Components/TextBlock.h \
   Runtime/SlateCore/Public/Fonts/SlateFontInfo.h \

@@ -78,6 +78,23 @@ bool UInventoryComponent::RemoveItem(UItemDataAsset* Item)
 	return false;
 }
 
+void UInventoryComponent::LoadItems(const TArray<UItemDataAsset*>& SavedItems)
+{
+	Items.Empty();
+	
+	for (UItemDataAsset* Item : SavedItems)
+	{
+		if (!IsValid(Item))
+		{
+			continue;
+		}
+		
+		Items.Add(Item);
+	}
+	
+	OnInventoryUpdated.Broadcast();
+}
+
 int32 UInventoryComponent::GetQuantity(UItemDataAsset* TargetItem) const
 {
 	if (!TargetItem)

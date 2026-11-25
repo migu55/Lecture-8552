@@ -3157,9 +3157,17 @@
   ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/CameraComponent.generated.h \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Public/Components/InventoryComponent.h \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT/InventoryComponent.generated.h \
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Public/Core/Lecture8552GameInstance.h \
+  Runtime/Engine/Classes/Engine/GameInstance.h \
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT/Lecture8552GameInstance.generated.h \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Public/Core/Lecture8552PlayerController.h \
   Runtime/Engine/Classes/GameFramework/PlayerController.h \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT/Lecture8552PlayerController.generated.h \
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Public/Core/Lecture8552SaveGame.h \
+  Runtime/Engine/Classes/GameFramework/SaveGame.h \
+  Runtime/Core/Public/Misc/CoreMiscDefines.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/SaveGame.generated.h \
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT/Lecture8552SaveGame.generated.h \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Public/Data/ItemDataAsset.h \
   /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT/ItemDataAsset.generated.h \
   Runtime/Engine/Classes/Engine/Engine.h \

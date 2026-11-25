@@ -3141,4 +3141,15 @@
   Runtime/CoreUObject/Public/UObject/Interface.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/MovementBaseInterface.generated.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/Character.generated.h \
-  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT/BaseCharacter.generated.h
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT/BaseCharacter.generated.h \
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Public/Character/NPCCharacter.h \
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT/NPCCharacter.generated.h \
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Public/Core/Lecture8552GameInstance.h \
+  Runtime/Engine/Classes/Engine/GameInstance.h \
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT/Lecture8552GameInstance.generated.h \
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Source/Lecture8552/Public/Core/Lecture8552SaveGame.h \
+  Runtime/Engine/Classes/GameFramework/SaveGame.h \
+  Runtime/Core/Public/Misc/CoreMiscDefines.h \
+  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/SaveGame.generated.h \
+  /Users/mmarasigan2/Documents/Unreal\ Projects/Lecture\ 5882/Lecture8552/Intermediate/Build/Mac/UnrealEditor/Inc/Lecture8552/UHT/Lecture8552SaveGame.generated.h \
+  Runtime/Engine/Classes/Engine/World.h

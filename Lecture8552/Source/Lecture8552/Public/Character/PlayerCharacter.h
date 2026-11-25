@@ -103,6 +103,8 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
 	TObjectPtr<UInventoryComponent> InventoryComponent;
 	
+	void ApplySavedPlayerData();
+	
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Consumables")
 	TObjectPtr<UItemDataAsset> EnergyPotion;
 
